@@ -1,0 +1,757 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"error",
+				"errorMsg"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"bacground",
+				"background-colour"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"in",
+				"indexOf"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"w",
+				"wait"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bo",
+				"border-bottom-style"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bor",
+				"border-top-style"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"is",
+				"isMaster"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"bord",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "circuit.sublime-project",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.xml",
+			"settings":
+			{
+				"buffer_size": 3566,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"scala",
+				"Set Syntax: Scala"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"alig",
+				"Preferences: Alignment File Settings – Syntax Specific – User"
+			],
+			[
+				"alu",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"ali",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/responsive-test-demo.js",
+		"/D/Work Documents/Private Projects/Stylify/stylify-staging/stylify-crawler.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/loadspeed.js",
+		"/D/Work Documents/Private Projects/Stylify/stylify-staging/stylify.sublime-project",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/follow.js",
+		"/D/Work Documents/Private Projects/Stylify/repo-frontend/index.html",
+		"/D/Work Documents/Private Projects/Stylify/repo-frontend/about-us.html",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/web-scrape.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/examples/rasterize.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/examples/phantomwebintro.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/examples/imagebin.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/examples/follow.js",
+		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/demo.js",
+		"/D/Work Documents/Private Projects/Stylify/repo-service/stylify.sublime-project",
+		"/D/Work Documents/Private Projects/Stylify/test phantom js scripts/demo.js",
+		"/D/Work Documents/Private Projects/Stylify/repo-frontend/javascripts/stylify.js",
+		"/D/Work Documents/Private Projects/Stylify/test phantom js scripts/phantom-test.js",
+		"/D/Work Documents/Private Projects/Stylify/repo-service/app.js",
+		"/H/Photoshop Lightroom v. 4.0 with [K]rack/Torrent downloaded from thePirateBay.org 2.rtf",
+		"/D/Work Documents/Nurun/Stylify/repo-frontend/index.html",
+		"/D/Work Documents/Nurun/Stylify/repo-frontend/javascripts/stylify.js",
+		"/D/Work Documents/Nurun/Stylify/repo-frontend/stylesheets/style.css",
+		"/D/Work Documents/Nurun/Stylify/repo-service/app.js",
+		"/D/Work Documents/Nurun/Stylify/repo-service/stylify-crawler.js",
+		"/D/Work Documents/Nurun/Stylify/repo-frontend/about-us.html",
+		"/D/Work Documents/Nurun/Stylify/repo-service/views/header.ejs",
+		"/D/Work Documents/Nurun/Stylify/stylify-staging/views/header.ejs",
+		"/D/Work Documents/Nurun/Stylify/stylify-staging/views/pdfbase.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo-service/views/pdfbase.ejs",
+		"/D/Work Documents/Nurun/Stylify/stylify-staging/stylify-crawler.js",
+		"/D/Work Documents/Nurun/Stylify/stylify-staging/app.js",
+		"/D/Work Documents/Nurun/Stylify/stylify-staging/views/footer.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo-service/phantom-rasterize.js",
+		"/D/Work Documents/Nurun/Stylify/repo-service/phantom-rasterize2.js",
+		"/D/Work Documents/Nurun/Stylify/demo/demo.js",
+		"/D/Work Documents/Nurun/Stylify/repo-service/views/footer.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo/app.js",
+		"/D/Work Documents/Nurun/Stylify/repo/stylify.sublime-project",
+		"/D/Work Documents/Nurun/Stylify/repo/.gitignore",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Work Documents/Nurun/Stylify/repo/views/index.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo/views/layout.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo/views/header.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo/views/footer.ejs",
+		"/D/Work Documents/Nurun/Stylify/repo/views/about.ejs",
+		"/D/Work Documents/Nurun/Stylify/build/heroku-buildpack-nodejs-phantomjs/bin/compile",
+		"/D/Work Documents/Nurun/Stylify/build/heroku-buildpack-phantomjs/bin/compile",
+		"/D/Work Documents/Nurun/Stylify/build/heroku-buildpack-phantomjs/bin/detect",
+		"/D/Work Documents/Nurun/Stylify/build/heroku-buildpack-phantomjs/bin/release",
+		"/D/Work Documents/Nurun/Stylify/repo/routes/about.js",
+		"/D/Work Documents/Nurun/Stylify/repo/public/stylesheets/style.css",
+		"/D/Work Documents/Nurun/Stylify/repo/public/javascripts/stylify.js",
+		"/D/Work Documents/Nurun/Stylify/repo/routes/phantom.js",
+		"/D/Work Documents/Nurun/Stylify/repo/.buildpacks",
+		"/D/Work Documents/Testbed/Play-apps/require-test/RUNNING_PID",
+		"/D/Work Documents/Testbed/Play-apps/require-test/public/stylesheets/main.css",
+		"/D/Work Documents/Testbed/Play-apps/require-test/require-test.sublime-project",
+		"/D/Work Documents/Nurun/Stylify/repo/stylify-crawler.js",
+		"/D/Work Documents/Nurun/Stylify/repo/routes/index.js",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/routes/index.js",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/public/stylesheets/style.css",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/routes/phantom.js",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/package.json",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/views/demo.html",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/views/layout.ejs",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/views/index.ejs",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/Procfile",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/web.js",
+		"/D/Work Documents/Nurun/Annabells Project/repo2/npm-debug.log",
+		"/D/Work Documents/Nurun/Annabells Project/html/css/960_16_col.css",
+		"/D/Work Documents/Nurun/Annabells Project/html/css/reset.css",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/single.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/style.css",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/page.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/page-templates/front-page.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/functions.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/sidebar.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/header.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/index.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/tag.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/search.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/archive.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/category.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/author.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/html/index.html",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/image.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/languages/itf-ic.pot",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/footer.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-none.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-page.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-quote.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-status.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/404.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/comments.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-aside.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-image.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/content-link.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/html/css/normalize.css",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/html/css/main.css",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/inc/custom-header.php",
+		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/languages/twentytwelve.pot",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/project/Build.scala",
+		"/D/Work Documents/Testbed/Play-apps/play-mustache/play2-mustache-master/sample/project/Build.scala",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/project/plugins.sbt",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/conf/play.plugins",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/public/javascripts/mustache-0.7.0.min.js",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/app/assets/mustache/test.html",
+		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/assets/mustache/test.html",
+		"/D/Work Documents/Testbed/Play-apps/play-mustache/play-mustache/documentation/manual/home.textile",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/public/index.html",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/express/package.json",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/public/css/main.css",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/public/js/main.js",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/socket.io/lib/socket.js",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/socket.io/lib/socket.io.js",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/README",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/index.html",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/app.js",
+		"/D/Work Documents/Testbed/node-js/appfog/midge/server.js",
+		"/D/Work Documents/Aro/Galway Advertiser/html/includes/styles/main.css",
+		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/fonts.css",
+		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/demo.html",
+		"/D/Work Documents/Freelance for Vinny/email/html/email.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	",
+			"[0-9]+. ",
+			"* ",
+			"input",
+			"th",
+			"result-header-1-dt",
+			"init",
+			"renderResult",
+			"queryUrl",
+			"crawlerFilePath",
+			"400",
+			"111",
+			");\n",
+			"erro",
+			"redire",
+			"crawlerFilePath",
+			"Invalid url",
+			"error:",
+			"validRefs",
+			"renderResult",
+			"console",
+			"111",
+			"parsePhantomResponse",
+			"111",
+			"search-error",
+			"		\n",
+			"search-error",
+			"parsePhantomResponse",
+			"onerror",
+			"Fail to load the current url",
+			"parsePhantomResponse",
+			"Fail to parse site",
+			"errorCode",
+			"parsePhantomResponse",
+			"onerror",
+			"404",
+			"Fail to load the current url",
+			"home-result-server-error",
+			"timeout",
+			"server-error-503",
+			"+ quer",
+			"parsePhantomResponse",
+			"phantomProcess.kill();",
+			"error",
+			"503",
+			"'home'",
+			"\"home\"",
+			"search-server-error",
+			"server-",
+			"timeout",
+			"1500",
+			"bbc",
+			"timeou",
+			"data.coloursText",
+			" data.coloursText",
+			"renderResult",
+			"data.coloursText",
+			"coloursText",
+			"errorMsg",
+			"error",
+			"res.jsonp",
+			"(401,",
+			"15000",
+			"20000",
+			"15000",
+			"10000",
+			"isValidURL",
+			"res.",
+			"res.jsonp(",
+			"parsePhantomResponse",
+			"503 from phantom:",
+			"PHANTOM ERROR",
+			"ERROR:",
+			"503",
+			"ERROR",
+			"ERRor",
+			"ERR",
+			"stdout.replace",
+			"currQueryUrl",
+			"formatUrl",
+			"'",
+			"currQueryUrl",
+			"formatUrl",
+			"currQueryUrl",
+			"queryUrl",
+			"renderResult",
+			"parsePhantomResponse",
+			"onerror",
+			"console.log(",
+			"renderResult",
+			"jsonp",
+			"fs.",
+			"deleteFile\n",
+			"deleteFile",
+			"urlBase",
+			"setQueryDoneState",
+			"$.a",
+			".msg",
+			".center",
+			"center",
+			".image-holder span",
+			"#link-back-to-top i",
+			"figcaption\n",
+			"setColour",
+			"id=\"color-",
+			"setColour",
+			"background-colour",
+			"main-background-colour",
+			"background-colour",
+			"color",
+			"colours",
+			"orderColourResponse",
+			"coloursReturn",
+			"color",
+			"colorProperties",
+			"colours",
+			"baseTextCol",
+			"bodyBgCol",
+			"coloursBgPreReturn",
+			"coloursPreReturn",
+			"logo",
+			"tempImgPath",
+			"homepage-img-holder",
+			"console",
+			"deleteFile",
+			"screenshotCacheTime",
+			"deleteFile",
+			"analize"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"id=\"bg-color-",
+			"id=\"text-color-",
+			"colour",
+			"coloursBgReturn",
+			"colourAttributes",
+			"crawlerFilePath",
+			"bodyTypo[",
+			"\"h\" + (i+1) + ",
+			"rgb2hex",
+			"typo[",
+			"typo",
+			"$jq",
+			"&raquo;",
+			"stylifyme.com",
+			"&raquo;",
+			"$jq",
+			"rgba(82,168,236,1)",
+			"setColour",
+			"dataBase + \"",
+			"h1",
+			"line-height",
+			"||",
+			") ||",
+			"naMsg",
+			"<br/>",
+			"images/",
+			"images",
+			"14px",
+			"line-height:24px",
+			"28px",
+			"24px",
+			"14px",
+			"24px",
+			"222",
+			"444",
+			"widget",
+			"itf-ic-",
+			"<div class=\"right-rail\" role=\"complementary\">",
+			"'itf-ac'",
+			".main-navigation",
+			".widget-area,",
+			"url(./img",
+			".widget-area ",
+			".widget-area",
+			"fd4e4f"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "circuit.sublime-project",
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config.xml",
+					"settings":
+					{
+						"buffer_size": 3566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								563,
+								563
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"fol",
+				"Presentation/follow.js"
+			],
+			[
+				"resp",
+				"Presentation/responsive-test-demo.js"
+			],
+			[
+				"load",
+				"Presentation/loadspeed.js"
+			],
+			[
+				"app",
+				"Sevice/app.js"
+			],
+			[
+				"sty",
+				"Staging/stylify-crawler.js"
+			],
+			[
+				"st",
+				"Frontend/javascripts/stylify.js"
+			],
+			[
+				"ab",
+				"Frontend/about-us.html"
+			],
+			[
+				"abou",
+				"Frontend/about-us.html"
+			],
+			[
+				"foo",
+				"views/footer.ejs"
+			],
+			[
+				"he",
+				"views/header.ejs"
+			],
+			[
+				"hea",
+				"views/header.ejs"
+			],
+			[
+				"javascriptcompiler.scala",
+				"src/sbt-plugin/src/main/scala/jscompile/JavascriptCompiler.scala"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true
+}
