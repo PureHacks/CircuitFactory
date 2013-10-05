@@ -26,6 +26,7 @@ var app = {
 	// Bind any events that are required on startup. Common events are:
 	// 'load', 'deviceready', 'offline', and 'online'.
 	bindEvents: function() {
+		console.log("bind events");
 		document.addEventListener('deviceready', this.onDeviceReady, false);
 	},
 	// deviceready Event Handler
@@ -37,8 +38,8 @@ var app = {
 	},
 	// Update DOM on a Received Event
 	receivedEvent: function(id) {
-		$("#loading-overlay").fadeOut();
-		
+		$("#loading-overlay").fadeOut(1000);
+
 		console.log('Received Event: ' + id);
 	}
 };

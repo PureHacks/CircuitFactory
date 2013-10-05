@@ -49,6 +49,10 @@ body {
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
 #loading-overlay i {position: absolute; text-align: center; top: 50%; display: block; width: 100%; margin-top: -0.5em;}
 
+
+/* helpers */
+.hide {display: none;}
+
 /* Portrait layout (default) */
 
 

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"fad",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
 				"if",
 				"ife	if … else"
 			],
@@ -26,10 +42,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"te",
-				"text-transform"
 			],
 			[
 				"bacground",
@@ -160,19 +172,44 @@
 	"buffers":
 	[
 		{
-			"file": "circuit.sublime-project",
-			"settings":
-			{
-				"buffer_size": 274,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "config.xml",
 			"settings":
 			{
 				"buffer_size": 3566,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2008,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/index.js",
+			"settings":
+			{
+				"buffer_size": 1571,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/models/models.js",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Windows",
+				"name": "var SavedWorkouts = function() {"
+			}
+		},
+		{
+			"file": "css/index.css",
+			"settings":
+			{
+				"buffer_size": 2498,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -252,6 +289,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/michael.mrowetz/Documents/GitHub/CircuitFactory/circuit/www/circuit.sublime-project",
 		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/responsive-test-demo.js",
 		"/D/Work Documents/Private Projects/Stylify/stylify-staging/stylify-crawler.js",
 		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/loadspeed.js",
@@ -378,8 +416,7 @@
 		"/D/Work Documents/Testbed/node-js/appfog/midge/server.js",
 		"/D/Work Documents/Aro/Galway Advertiser/html/includes/styles/main.css",
 		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/fonts.css",
-		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/demo.html",
-		"/D/Work Documents/Freelance for Vinny/email/html/email.html"
+		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/demo.html"
 	],
 	"find":
 	{
@@ -387,7 +424,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			""
@@ -398,6 +435,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gap:platform",
+			"ircute",
+			"circute",
 			"	",
 			"[0-9]+. ",
 			"* ",
@@ -522,17 +562,15 @@
 			"tempImgPath",
 			"homepage-img-holder",
 			"console",
-			"deleteFile",
-			"screenshotCacheTime",
-			"deleteFile",
-			"analize"
+			"deleteFile"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"ircuit",
 			"",
 			"id=\"bg-color-",
 			"id=\"text-color-",
@@ -589,36 +627,11 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "circuit.sublime-project",
-					"settings":
-					{
-						"buffer_size": 274,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "config.xml",
 					"settings":
 					{
@@ -629,8 +642,8 @@
 						"selection":
 						[
 							[
-								563,
-								563
+								3516,
+								3516
 							]
 						],
 						"settings":
@@ -640,7 +653,115 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1208,
+								1208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 345.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1524,
+								1524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/models/models.js",
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var SavedWorkouts = function() {",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/index.css",
+					"settings":
+					{
+						"buffer_size": 2498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2053,
+								2057
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 391.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -689,6 +810,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"in",
+				"js/index.js"
+			],
 			[
 				"fol",
 				"Presentation/follow.js"
