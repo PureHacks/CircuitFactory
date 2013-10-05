@@ -37,13 +37,13 @@
 				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">summary</button>
 			</nav>
 			<div id="app-screen-holder">
-				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, fadeVisible : activeScreen() == 'circuit-home'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, transitionScreen : activeScreen() == 'circuit-home'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, fadeVisible : activeScreen() == 'circuit-setup'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, transitionScreen : activeScreen() == 'circuit-setup'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, fadeVisible : activeScreen() == 'circuit-interval'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, transitionScreen : activeScreen() == 'circuit-interval'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, fadeVisible : activeScreen() == 'circuit-summary'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, transitionScreen : activeScreen() == 'circuit-summary'">
 				</section>
 			</div>
 		</div>

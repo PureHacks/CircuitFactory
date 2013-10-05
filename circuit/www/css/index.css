@@ -45,7 +45,13 @@ body {
 	width:100%;
 }
 
+/*Base styles*/
+button {font-size: 1.5em; padding: 1em 1em;}
+h2 {font-size: 3em;}
+
+
 /*Global*/
+.app {padding: 1em 2em;}
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
 #loading-overlay i {position: absolute; text-align: center; top: 50%; display: block; width: 100%; margin-top: -0.5em;}
 
