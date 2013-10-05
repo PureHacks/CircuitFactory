@@ -5,7 +5,7 @@ var SavedCircuit = function() {
 };
 
 
-var Excercise = function() {
+var Exercise = function() {
 	this.name = "";
 	this.intensity = ko.observable();
 	this.coreAspect = ko.observableArray();
