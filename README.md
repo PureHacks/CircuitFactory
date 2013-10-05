@@ -1,7 +1,7 @@
 CircuitFactory
 ==============
 
-Personal workout guide that helps you through your circut training.
+Personal workout guide that helps you through your circuit training.
 
 Work In Progress
 ----------------
