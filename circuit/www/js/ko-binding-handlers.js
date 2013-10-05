@@ -10,6 +10,12 @@ ko.bindingHandlers.transitionScreen = {
 ko.bindingHandlers.knobify = {
     init: function(element) {
         // Turn the input into a knob on load
-        $(element).knob(value);
+        $(element).knob({
+            'min': 0,
+            'max': 60,
+            'step': 6,
+            'width': 300,
+            'height': 300
+        });
     }
 };

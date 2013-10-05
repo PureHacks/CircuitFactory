@@ -71,7 +71,9 @@ h2 {font-size: 3em;}
 	
 }
 
-
+#timeselector {
+	text-align: center;
+}
 
 @keyframes fade {
 	from { opacity: 1.0; }
