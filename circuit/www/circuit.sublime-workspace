@@ -4,20 +4,8 @@
 		"selected_items":
 		[
 			[
-				"fad",
-				"fadeOut	.fadeOut()"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"marg",
+				"ma",
 				"margin-top"
-			],
-			[
-				"to",
-				"top"
 			],
 			[
 				"if",
@@ -42,6 +30,10 @@
 			[
 				"tex",
 				"text-align"
+			],
+			[
+				"te",
+				"text-transform"
 			],
 			[
 				"bacground",
@@ -94,10 +86,6 @@
 			[
 				"l",
 				"left"
-			],
-			[
-				"ma",
-				"margin-bottom"
 			],
 			[
 				"b",
@@ -180,28 +168,14 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<!--\n	Licensed to the Apache Software Foundation (ASF) under one\n	or more contributor license agreements.  See the NOTICE file\n	distributed with this work for additional information\n	regarding copyright ownership.  The ASF licenses this file\n	to you under the Apache License, Version 2.0 (the\n	\"License\"); you may not use this file except in compliance\n	with the License.  You may obtain a copy of the License at\n\n	http://www.apache.org/licenses/LICENSE-2.0\n\n	Unless required by applicable law or agreed to in writing,\n	software distributed under the License is distributed on an\n	\"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n	 KIND, either express or implied.  See the License for the\n	specific language governing permissions and limitations\n	under the License.\n-->\n<html>\n	<head>\n		<meta charset=\"utf-8\" />\n		<meta name=\"format-detection\" content=\"telephone=no\" />\n		<meta name=\"viewport\" content=\"user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi\" />\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"css/index.css\" />\n		<title>Circuit Factory</title>\n	</head>\n	<body>\n		<div id=\"loading-overlay\">\n			<i class=\"blink\">Loading&hellip;</i>\n		</div>\n		<div class=\"app\">\n			<section id=\"mainHolder\" data-bind=\"template: { name: 'circuit-home', data: {} }\">\n			</section>\n		</div>\n\n		<script type=\"text/html\" id=\"circuit-home\">\n			<h2>Welcome to Circuit Factory</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-setup\">\n			<h2>Build your Circuit</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-interval\">\n			<h2>Do your Circuit</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-summary\">\n			<h2>Circuit Overview</h2>\n		</script>\n\n\n		<script src=\"js/jquery-2.0.3.min.js\"></script>\n		<script src=\"js/knockout-2.3.0.js\"></script>\n		<script src=\"js/models/models.js\"></script>\n		<script src=\"js/models/models.js\"></script>	\n		<script src=\"js/knockout-2.3.0.js\"></script>	\n\n		<script src=\"phonegap.js\"></script>\n		<script src=\"js/index.js\"></script>\n		<script>\n			app.initialize();\n		</script>\n	</body>\n</html>\n",
 			"file": "index.html",
+			"file_size": 2062,
+			"file_write_time": 130254581296011830,
 			"settings":
 			{
-				"buffer_size": 2008,
+				"buffer_size": 2140,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/index.js",
-			"settings":
-			{
-				"buffer_size": 1571,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/models/models.js",
-			"settings":
-			{
-				"buffer_size": 230,
-				"line_ending": "Windows",
-				"name": "var SavedWorkouts = function() {"
 			}
 		},
 		{
@@ -211,14 +185,35 @@
 				"buffer_size": 2498,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "js/index.js",
+			"settings":
+			{
+				"buffer_size": 1591,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/ViewModels/app.js",
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Windows",
+				"name": "var CircuitFactory = {"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 242.0,
 		"selected_items":
 		[
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -289,7 +284,8 @@
 	},
 	"file_history":
 	[
-		"/C/Users/michael.mrowetz/Documents/GitHub/CircuitFactory/circuit/www/circuit.sublime-project",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/.git/config",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/circuit.sublime-project",
 		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/responsive-test-demo.js",
 		"/D/Work Documents/Private Projects/Stylify/stylify-staging/stylify-crawler.js",
 		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/loadspeed.js",
@@ -415,8 +411,7 @@
 		"/D/Work Documents/Testbed/node-js/appfog/midge/app.js",
 		"/D/Work Documents/Testbed/node-js/appfog/midge/server.js",
 		"/D/Work Documents/Aro/Galway Advertiser/html/includes/styles/main.css",
-		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/fonts.css",
-		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/demo.html"
+		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/fonts.css"
 	],
 	"find":
 	{
@@ -424,7 +419,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -435,9 +430,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"gap:platform",
-			"ircute",
-			"circute",
+			"receivedEvent",
+			"bindEvents",
 			"	",
 			"[0-9]+. ",
 			"* ",
@@ -562,15 +556,15 @@
 			"tempImgPath",
 			"homepage-img-holder",
 			"console",
-			"deleteFile"
+			"deleteFile",
+			"screenshotCacheTime"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
-			"ircuit",
 			"",
 			"id=\"bg-color-",
 			"id=\"text-color-",
@@ -627,7 +621,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -642,8 +636,8 @@
 						"selection":
 						[
 							[
-								3516,
-								3516
+								1098,
+								1098
 							]
 						],
 						"settings":
@@ -653,7 +647,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -663,84 +657,31 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2008,
+						"buffer_size": 2140,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1208,
-								1208
+								1391,
+								1391
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 345.0,
+						"translation.y": 287.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "js/index.js",
-					"settings":
-					{
-						"buffer_size": 1571,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1524,
-								1524
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 210.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/models/models.js",
-					"settings":
-					{
-						"buffer_size": 230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								227,
-								227
-							]
-						],
-						"settings":
-						{
-							"auto_name": "var SavedWorkouts = function() {",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "css/index.css",
 					"settings":
 					{
@@ -751,17 +692,74 @@
 						"selection":
 						[
 							[
-								2053,
-								2057
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 391.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 1591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1544,
+								1526
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/ViewModels/app.js",
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var CircuitFactory = {",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -810,10 +808,6 @@
 		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"in",
-				"js/index.js"
-			],
 			[
 				"fol",
 				"Presentation/follow.js"
