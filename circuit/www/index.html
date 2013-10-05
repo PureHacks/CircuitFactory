@@ -36,14 +36,16 @@
 				<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">interval</button>
 				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">summary</button>
 			</nav>
-			<section data-bind="template:{ name: 'circuit-home'}, visible : activeScreen() == 'circuit-home'">
-			</section>
-			<section data-bind="template:{ name: 'circuit-setup'}, visible : activeScreen() == 'circuit-setup'">
-			</section>
-			<section data-bind="template:{ name: 'circuit-interval'}, visible : activeScreen() == 'circuit-interval'">
-			</section>
-			<section data-bind="template:{ name: 'circuit-summary'}, visible : activeScreen() == 'circuit-summary'">
-			</section>
+			<div id="app-screen-holder">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, fadeVisible : activeScreen() == 'circuit-home'">
+				</section>
+				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, fadeVisible : activeScreen() == 'circuit-setup'">
+				</section>
+				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, fadeVisible : activeScreen() == 'circuit-interval'">
+				</section>
+				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, fadeVisible : activeScreen() == 'circuit-summary'">
+				</section>
+			</div>
 		</div>
 
 		<script type="text/html" id="circuit-home">
@@ -65,9 +67,9 @@
 
 		<script src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/knockout-2.3.0.js"></script>
+		<script src="js/ko-binding-handlers.js"></script>		
 		<script src="js/models/models.js"></script>
-		<script src="js/viewModels/viewModels.js"></script>	
-		<script src="js/knockout-2.3.0.js"></script>	
+		<script src="js/viewModels/viewModels.js"></script>
 
 		<script src="phonegap.js"></script>
 		<script src="js/index.js"></script>
