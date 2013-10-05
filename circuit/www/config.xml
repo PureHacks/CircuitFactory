@@ -2,7 +2,7 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 	<name>Circuit Factory</name>
 	<description>
-		Personal workout guide that helps you through your circut training.
+		Personal workout guide that helps you through your circuit training.
 	</description>
 	<author email="michaelmrowetz@nurun.com" href="https://github.com/PureHacks/GitUp">
 		Ahmad Kadhim, Livinus Brown, Michael MacLennan, Michael Mrowetz
