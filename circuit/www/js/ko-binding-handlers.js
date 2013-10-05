@@ -13,6 +13,11 @@ ko.bindingHandlers.knobify = {
 		console.log(ko.utils.unwrapObservable(valueAccessor()));
 		// Turn the input into a knob on load
 		var knob = $(element).knob({
+            'min': 0,
+            'max': 60,
+            'step': 6,
+            'width': 300,
+            'height': 300,
 			'change' : function (v) {
 				var value = valueAccessor();
 				value(v);
@@ -23,14 +28,4 @@ ko.bindingHandlers.knobify = {
 	update: function(element, valueAccessor) {
 		$(element).val(ko.utils.unwrapObservable(valueAccessor())).trigger('change');
 	}
-    init: function(element) {
-        // Turn the input into a knob on load
-        $(element).knob({
-            'min': 0,
-            'max': 60,
-            'step': 6,
-            'width': 300,
-            'height': 300
-        });
-    }
 };
