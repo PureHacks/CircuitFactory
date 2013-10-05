@@ -10,3 +10,10 @@ ko.bindingHandlers.fadeVisible = {
         ko.utils.unwrapObservable(value) ? $(element).fadeIn() : $(element).fadeOut();
     }
 };
+
+ko.bindingHandlers.knobify = {
+    init: function(element) {
+        // Turn the input into a knob on load
+        $(element).knob(value);
+    }
+};
