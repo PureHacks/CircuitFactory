@@ -45,25 +45,8 @@
 		</div>
 
 		<script type="text/html" id="circuit-home">
-<<<<<<< HEAD
+
 			<h2 class="welcome">Welcome to Circuit Factory</h2>
-		</script>
-
-		<script type="text/html" id="circuit-setup">
-			<h2 class="build">How much time do you have?</h2>
-			<div id="timeselector">
-				<input type="text" value="0" class="dial" data-bind="knobify">
-			</div>
-		</script>
-
-		<script type="text/html" id="circuit-interval">
-			<h2 class="interval">Do your Circuit</h2>
-		</script>
-
-		<script type="text/html" id="circuit-summary">
-			<h2 class="summary">Circuit Overview</h2>
-=======
-			<h2>Welcome to Circuit Factory</h2>
 			<p>
 				<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
 			</p>
@@ -76,7 +59,12 @@
 			<nav class="top-bar">
 				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
 			</nav>
-			<h2>Build your Circuit</h2>
+
+			<h2 class="build">How much time do you have?</h2>
+
+			<div id="timeselector">
+				<input type="text" value="0" class="dial" data-bind="">
+			</div>
 
 			<p>
 				<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">Start Workout</button>
@@ -87,7 +75,7 @@
 			<nav class="top-bar">
 				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
 			</nav>
-			<h2>Do your Circuit!</h2>
+			<h2 class="interval">Do your Circuit</h2>
 
 			<p>
 				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
@@ -95,7 +83,7 @@
 		</script>
 
 		<script type="text/html" id="circuit-summary">
-			<h2>Circuit Overview</h2>
+			<h2 class="summary">Circuit Overview</h2>
 			<p>Well done!</p>
 			<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Done</button>
 		</script>
@@ -106,20 +94,21 @@
 			</nav>
 			<h2>Saved Circuits</h2>
 		</script>
->>>>>>> 422f6d734ac53b286f8b410a5c9628c6611a6468
 
 
 		</script>
 
 		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/knob.js"></script>
 		<script src="js/knockout-2.3.0.js"></script>
 		<script src="js/ko-binding-handlers.js"></script>		
 		<script src="js/models/models.js"></script>
 		<script src="js/viewModels/viewModels.js"></script>
 
+
 		<script src="phonegap.js"></script>
 		<script src="js/index.js"></script>
-		<script src="js/knob.js"></script>
+		
 		<script>
 			app.initialize();
 		</script>
