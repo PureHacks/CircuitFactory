@@ -37,7 +37,7 @@ body {
 	);
 	background-attachment:fixed;
 	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	font-size:12px;
+	/*font-size:12px;*/
 	height:100%;
 	margin:0px;
 	padding:0px;
@@ -55,6 +55,7 @@ h2 {font-size: 3em;}
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
 #loading-overlay i {position: absolute; text-align: center; top: 50%; display: block; width: 100%; margin-top: -0.5em;}
 
+.top-bar {background: #ccc;}
 #app-screen-holder {position: relative;}
 .app-screen {position: absolute; top:0;}
 
