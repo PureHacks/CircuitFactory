@@ -30,25 +30,22 @@
 			<i class="blink">Loading&hellip;</i>
 		</div>
 		<div class="app">
-			<nav>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">home</button>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">setup</button>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">interval</button>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">summary</button>
-			</nav>
 			<div id="app-screen-holder">
-				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, fadeVisible : activeScreen() == 'circuit-home'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, transitionScreen : activeScreen() == 'circuit-home'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, fadeVisible : activeScreen() == 'circuit-setup'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, transitionScreen : activeScreen() == 'circuit-setup'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, fadeVisible : activeScreen() == 'circuit-interval'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, transitionScreen : activeScreen() == 'circuit-interval'">
 				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, fadeVisible : activeScreen() == 'circuit-summary'">
+				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, transitionScreen : activeScreen() == 'circuit-summary'">
+				</section>
+				<section class="app-screen" data-bind="template:{ name: 'circuit-archive'}, transitionScreen : activeScreen() == 'circuit-archive'">
 				</section>
 			</div>
 		</div>
 
 		<script type="text/html" id="circuit-home">
+<<<<<<< HEAD
 			<h2 class="welcome">Welcome to Circuit Factory</h2>
 		</script>
 
@@ -65,6 +62,56 @@
 
 		<script type="text/html" id="circuit-summary">
 			<h2 class="summary">Circuit Overview</h2>
+=======
+			<h2>Welcome to Circuit Factory</h2>
+			<p>
+				<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
+			</p>
+			<p>
+				<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">Show previous Circuits</button>
+			</p>
+		</script>
+
+		<script type="text/html" id="circuit-setup">
+			<nav class="top-bar">
+				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+			</nav>
+			<h2>Build your Circuit</h2>
+
+			<p>
+				<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">Start Workout</button>
+			</p>
+		</script>
+
+		<script type="text/html" id="circuit-interval">
+			<nav class="top-bar">
+				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+			</nav>
+			<h2>Do your Circuit!</h2>
+
+			<p>
+				<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Back to Setup</button>
+			</p>
+
+
+			<p>
+				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
+			</p>
+		</script>
+
+		<script type="text/html" id="circuit-summary">
+			<h2>Circuit Overview</h2>
+			<p>Well done!</p>
+			<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Home</button>
+		</script>
+
+		<script type="text/html" id="circuit-archive">
+			<nav class="top-bar">
+				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+			</nav>
+			<h2>Saved Circuits</h2>
+		</script>
+>>>>>>> 422f6d734ac53b286f8b410a5c9628c6611a6468
 
 
 		</script>
