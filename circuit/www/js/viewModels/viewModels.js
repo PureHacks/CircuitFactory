@@ -13,15 +13,18 @@
 			self.currentCircuit(new Circuit());
 		};
 
-
 		self.startCircuit = function(){
-			
+			self.currentCircuit().start();
 		};
-
 
 		self.changeScreen = function(id){
 			self.activeScreen(id);
 		};
+
+		if(self.savedCircuits().length == 0){
+			self.addNewCircutes();
+			self.activeScreen("circuit-setup");
+		}
 	};
 
 	ko.applyBindings(new ViewModel());

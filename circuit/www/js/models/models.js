@@ -6,7 +6,8 @@ var Excercise = function() {
 	this.coreAspect = ko.observableArray();
 };
 
-var Circuit = function() {
+var Circuit = function(data) {
+	data = data|| {};
 	var self = this;
 	var timer = null;
 
@@ -15,13 +16,14 @@ var Circuit = function() {
 	self.dateCreated = "";
 	self.dateLastFinished = ko.observable();
 
-	self.duration = ko.observable();
-	self.timeExercise = ko.observable(40);
-	self.timeRest = ko.observable(20);
+	//set to default values
+	self.duration = ko.observable(data.duration||8);
+	self.timeExercise = ko.observable(data.timeExercise||40);
+	self.timeRest = ko.observable(data.timeRest||20);
 
 
-	self.intensity = ko.observable();
-	self.excercises = ko.observableArray();
+	self.intensity = ko.observable(data.intensity||2);
+	self.excercises = ko.observableArray(data.excercises||[]); //to grenerate random exercises
 
 	self.currentExcercise = ko.observable();
 	self.isInRestMode = ko.observable(false);
