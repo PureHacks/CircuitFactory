@@ -9,8 +9,6 @@ ko.bindingHandlers.transitionScreen = {
 
 ko.bindingHandlers.knobify = {
 	init: function(element, valueAccessor) {
-
-		console.log(ko.utils.unwrapObservable(valueAccessor()));
 		// Turn the input into a knob on load
 		var knob = $(element).knob({
             'min': 0,
@@ -26,7 +24,6 @@ ko.bindingHandlers.knobify = {
 				value(v);
 			}
 		});
-		console.log(knob);
 	},
 	update: function(element, valueAccessor) {
 		$(element).val(ko.utils.unwrapObservable(valueAccessor())).trigger('change');

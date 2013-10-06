@@ -16,23 +16,48 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
 	// Application Constructor
 	initialize: function() {
 		this.bindEvents();
-	},
+	}
+	,db : null
 	// Bind Event Listeners
 	//
 	// Bind any events that are required on startup. Common events are:
 	// 'load', 'deviceready', 'offline', and 'online'.
-	bindEvents: function() {
-		$(document).on('deviceready', this.onDeviceReady);
-	},
-	// deviceready Event Handler
-	//
-	// The scope of 'this' is the event. In order to call the 'receivedEvent'
-	// function, we must explicity call 'app.receivedEvent(...);'
-	onDeviceReady: function() {
+	,bindEvents: function() {
+		$(document)
+			.on('deviceready', this.onDeviceReady)
+			.on('dbready', this.onDbReady);
+	}
+	,onDeviceReady: function() {
+		var  db = window.openDatabase("circuitFactory", "1.0", "Circuit Factory DB", 1000000)
+			,dbCreated = window.localStorage.getItem("dbCreated");
+
+
+		//TEMP: 
+		dbCreated = "ForceDelete";
+
+		if(dbCreated !== "1"){
+			init.setupDb(db, function(){
+				window.localStorage.setItem("dbCreated", "1"); 
+				$(document).trigger('dbready', db);
+			});
+		} else {
+			$(document).trigger('dbready', db);
+		}
+	}
+	,onDbReady: function(evt, db) {
+		ko.applyBindings(new CircuitFactoryViewModel(db));
+
+		db.transaction(function(tx){tx.executeSql('SELECT * FROM EXERCISE');}, function(){console.log("ERROR",arguments);}, function(){console.log("SUCCESS",arguments)})
+		
 		$("#loading-overlay").fadeOut(1000);
+	}
+	,resetApp: function(){
+		window.localStorage.removeItem("dbCreated");
+		app.onDeviceReady();
 	}
 };
