@@ -22,6 +22,7 @@
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<title>Circuit Factory</title>
 	</head>
@@ -29,73 +30,90 @@
 		<div id="loading-overlay">
 			<i class="blink">Loading&hellip;</i>
 		</div>
-		<div class="app">
-			<div id="app-screen-holder">
-				<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, transitionScreen : activeScreen() == 'circuit-home'">
-				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, transitionScreen : activeScreen() == 'circuit-setup'">
-				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, transitionScreen : activeScreen() == 'circuit-interval'">
-				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, transitionScreen : activeScreen() == 'circuit-summary'">
-				</section>
-				<section class="app-screen" data-bind="template:{ name: 'circuit-archive'}, transitionScreen : activeScreen() == 'circuit-archive'">
-				</section>
-			</div>
+		<div id="app-screen-holder">
+			<section class="app-screen" data-bind="template:{ name: 'circuit-home'}, transitionScreen : activeScreen() == 'circuit-home'">
+			</section>
+			<section class="app-screen" data-bind="template:{ name: 'circuit-setup'}, transitionScreen : activeScreen() == 'circuit-setup'">
+			</section>
+			<section class="app-screen" data-bind="template:{ name: 'circuit-interval'}, transitionScreen : activeScreen() == 'circuit-interval'">
+			</section>
+			<section class="app-screen" data-bind="template:{ name: 'circuit-summary'}, transitionScreen : activeScreen() == 'circuit-summary'">
+			</section>
+			<section class="app-screen" data-bind="template:{ name: 'circuit-archive'}, transitionScreen : activeScreen() == 'circuit-archive'">
+			</section>
 		</div>
 
 		<script type="text/html" id="circuit-home">
-
-			<h2 class="welcome">Welcome to Circuit Factory</h2>
-			<p>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
-			</p>
-			<p>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">Show previous Circuits</button>
-			</p>
+			<div class="start">
+				<h1 class="welcome">Circuit Factory</h1>
+				<p>
+					<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
+				</p>
+				<p>
+					<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">Show previous Circuits</button>
+				</p>
+			</div>
 		</script>
 
 		<script type="text/html" id="circuit-setup">
-			<nav class="top-bar">
-				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
-			</nav>
+			<div class="app">
+				<nav class="top-bar">
+					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+				</nav>
 
-			<h2 class="build">How much time do you have?</h2>
+				<div class="content">
+					<h2 class="build">How much time do you have?</h2>
 
-			<div id="timeselector">
-				<input type="text" class="dial" data-bind="knobify : currentCircuit().duration">
+					<div id="timeselector">
+						<input type="text" class="dial" data-bind="knobify : currentCircuit().duration">
+					</div>
+
+					<p>
+						<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">Start Workout</button>
+					</p>
+				</div>
 			</div>
-
-			<p>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">Start Workout</button>
-			</p>
 		</script>
 
 		<script type="text/html" id="circuit-interval">
-			<nav class="top-bar">
-				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
-			</nav>
-			<h2 class="interval">Do your Circuit</h2>
+			<div class="app">
+				<nav class="top-bar">
+					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+				</nav>
+				
+				<div class="content">
+					<h2 class="interval">Do your Circuit</h2>
 
-			<p>
-				<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
-			</p>
+					<p>
+						<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
+					</p>
+				</div>
+			</div>
 		</script>
 
 		<script type="text/html" id="circuit-summary">
-			<h2 class="summary">Circuit Overview</h2>
-			<p>Well done!</p>
-			<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Done</button>
+			<div class="app">
+				<nav class="top-bar">
+					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Done</button>
+				</nav>
+
+				<div class="content">
+					<h2 class="summary">Circuit Overview</h2>
+					<p>Well done!</p>
+				</div>
+			</div>
 		</script>
 
 		<script type="text/html" id="circuit-archive">
-			<nav class="top-bar">
-				<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
-			</nav>
-			<h2>Saved Circuits</h2>
-		</script>
+			<div class="app">
+				<nav class="top-bar">
+					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+				</nav>
 
-
+				<div class="content">
+					<h2>Saved Circuits</h2>
+				</div>
+			</div>
 		</script>
 
 		<script src="js/jquery-2.0.3.min.js"></script>

@@ -20,12 +20,15 @@
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:200,400,600);
+
 body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-color:#E4E4E4;
-	background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+	background-image: url(../img/lightblue-line-bg-8x8.png);
+	/*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-webkit-gradient(
@@ -35,8 +38,9 @@ body {
 		color-stop(0, #A7A7A7),
 		color-stop(0.51, #E4E4E4)
 	);
-	background-attachment:fixed;
-	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	ba*/ckground-attachment:fixed;
+	font-family:'Raleway', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	/*font-size:12px;*/
 	height:100%;
 	margin:0px;
@@ -46,16 +50,41 @@ body {
 }
 
 /*Base styles*/
-button {font-size: 1.5em; padding: 1em 1em;}
-h2 {font-size: 3em;}
+button {
+	font-size: 1.5em;
+	padding: .6em 1.2em;
+	background: #e7e7e7;
+    border: 1px solid #eee;
+	-webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button {
+	font-family: 'inherit';
+}
+
+h1 {
+	font-size: 3.5em;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 600;
+}
 
 
 /*Global*/
-.app {padding: 1em 2em;}
+.app {}
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
 #loading-overlay i {position: absolute; text-align: center; top: 50%; display: block; width: 100%; margin-top: -0.5em;}
 
-.top-bar {background: #ccc;}
+.top-bar {
+	margin-bottom: 1em;
+	background: #fff;
+	border-bottom: 1px solid rgba(11,201,240,.2); // (11,201,240) equivalent of #0bc9f0
+}
+
 #app-screen-holder {position: relative;}
 .app-screen {position: absolute; top:0;}
 
