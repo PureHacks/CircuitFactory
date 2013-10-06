@@ -20,15 +20,15 @@
 	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-@import url(http://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:200,400,600);
-
 body {
 	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
 	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
 	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-color:#E4E4E4;
 	background-image: url(../img/lightblue-line-bg-8x8.png);
-	/*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+
+	/*
+	background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
 	background-image:-webkit-gradient(
@@ -38,9 +38,11 @@ body {
 		color-stop(0, #A7A7A7),
 		color-stop(0.51, #E4E4E4)
 	);
-	ba*/ckground-attachment:fixed;
+	background-attachment:fixed;
+	*/
+
 	font-family:'Raleway', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 	/*font-size:12px;*/
 	height:100%;
 	margin:0px;
@@ -53,19 +55,20 @@ body {
 button {
 	font-size: 1.5em;
 	padding: .6em 1.2em;
-	background: #e7e7e7;
-    border: 1px solid #eee;
+	background: #fcfcfc;
+    border: 1px solid #fff;
 	-webkit-border-radius: 4px;
     border-radius: 4px;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
-	font-family: 'inherit';
+	font-family: 'Raleway';
 }
 
 h1 {
-	font-size: 3.5em;
-	font-weight: 600;
+	font-family: 'Raleway Dots';
+	font-size: 4.5em;
+	text-align: center;
 }
 
 h2 {
@@ -88,18 +91,6 @@ h2 {
 #app-screen-holder {position: relative;}
 .app-screen {position: absolute; top:0;}
 
-/* helpers */
-.hide {display: none;}
-
-
-/* Portrait layout (default) */
-
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-	
-}
-
 #timeselector {
 	text-align: center;
 }
@@ -115,10 +106,19 @@ h2 {
 	50% { opacity: 0.4; }
 	to { opacity: 1.0; }
 }
- 
+
+/* helpers */
+.hide {display: none;}
+
 .blink {
 	animation:fade 3000ms infinite;
 	-webkit-animation:fade 3000ms infinite;
+}
+
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+	
 }
 
 

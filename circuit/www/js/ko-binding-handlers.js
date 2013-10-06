@@ -20,6 +20,7 @@ ko.bindingHandlers.knobify = {
             'height': 300,
             'fgColor': '#0bc9f0',
             'bgColor': '#fff',
+            'font': 'Raleway Dots',
 			'change' : function (v) {
 				var value = valueAccessor();
 				value(v);
