@@ -62,13 +62,16 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
+	text-align: center;
 	font-family: 'Raleway';
 }
 
 h1 {
 	font-family: 'Raleway Dots';
+	font-weight: 100;
 	font-size: 4.5em;
 	text-align: center;
+	margin-top: 15%;
 }
 
 h2 {
@@ -78,9 +81,11 @@ h2 {
 
 
 /*Global*/
-.app {}
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
 #loading-overlay i {position: absolute; text-align: center; top: 50%; display: block; width: 100%; margin-top: -0.5em;}
+
+
+.app, #home {position: absolute; top:0; right: 0; bottom: 0; left: 0;}
 
 .top-bar {
 	margin-bottom: 1em;
@@ -88,11 +93,12 @@ h2 {
 	border-bottom: 1px solid rgba(11,201,240,.2); // (11,201,240) equivalent of #0bc9f0
 }
 
-#app-screen-holder {position: relative;}
-.app-screen {position: absolute; top:0;}
+#app-screen-holder {position: absolute; top:0; right: 0; bottom: 0; left: 0;}
+.app-screen {position: absolute; top:0; right: 0; bottom: 0; left: 0;}
 
 #timeselector {
 	text-align: center;
+	margin-top: 2em;
 }
 
 @keyframes fade {
@@ -107,6 +113,31 @@ h2 {
 	to { opacity: 1.0; }
 }
 
+/* Home Page */
+
+div#get-started {
+	position: absolute;
+	bottom: 4em;
+	width: 100%;
+}
+
+div#get-started button {
+	text-align: center;
+	width: 15em;
+}
+
+div#get-started button:first-child {
+	margin-bottom: .45em;
+}
+
+
+/* Time Page */
+
+
+
+
+
+
 /* helpers */
 .hide {display: none;}
 
@@ -115,6 +146,10 @@ h2 {
 	-webkit-animation:fade 3000ms infinite;
 }
 
+.right {
+	position: absolute;
+	right: 0px;
+}
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {

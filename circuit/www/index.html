@@ -47,19 +47,22 @@
 		<script type="text/html" id="circuit-home">
 			<div id="home">
 				<h1>Circuit Factory</h1>
-				<p>
-					<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
-				</p>
-				<p>
-					<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">Show previous Circuits</button>
-				</p>
+				<div id="get-started">
+					<p>
+						<button data-bind="click: changeScreen.bind($data, 'circuit-setup')">Build a Circuit</button>
+					</p>
+					<p>
+						<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">Show Previous Circuits</button>
+					</p>
+				</div>
 			</div>
 		</script>
 
 		<script type="text/html" id="circuit-setup">
 			<div class="app">
 				<nav class="top-bar">
-					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+					<button class="left" data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+					<button class="right" id="GO!" data-bind="click: changeScreen.bind($data, 'circuit-interval')">GO!</button>
 				</nav>
 
 				<div class="content">
@@ -68,10 +71,6 @@
 					<div id="timeselector">
 						<input type="text" class="dial" data-bind="knobify : currentCircuit().duration">
 					</div>
-
-					<p>
-						<button data-bind="click: changeScreen.bind($data, 'circuit-interval')">Start Workout</button>
-					</p>
 				</div>
 			</div>
 		</script>
