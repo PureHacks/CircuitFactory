@@ -1,4 +1,5 @@
-var CircuitFactoryViewModel = function(dataBase) {
+//dal = data access layer
+var CircuitFactoryViewModel = function(dal) {
 	var self = this;
 
 	self.activeScreen = ko.observable("circuit-home");

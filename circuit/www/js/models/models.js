@@ -109,6 +109,11 @@ var Circuit = function(data) {
 
 	self.start = function(){
 		console.log(self.duration());
+
+		dal.getRandomCircute(2,function(result){
+			console.log("Query Result", result);
+		});
+		
 		self.nextExercise(true);
 	};
 };

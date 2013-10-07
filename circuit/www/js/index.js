@@ -33,27 +33,24 @@ var app = {
 			.on('dbready', this.onDbReady);
 	}
 	,onDeviceReady: function() {
-		var  db = window.openDatabase("circuitFactory", "1.0", "Circuit Factory DB", 1000000)
-			,dbCreated = window.localStorage.getItem("dbCreated");
+		var dbCreated = window.localStorage.getItem("dbCreated");
 
 
 		//TEMP: 
 		dbCreated = "ForceDelete";
 
 		if(dbCreated !== "1"){
-			init.setupDb(db, function(){
+			dal.setupDb(function(){
 				window.localStorage.setItem("dbCreated", "1"); 
-				$(document).trigger('dbready', db);
+				$(document).trigger('dbready');
 			});
 		} else {
-			$(document).trigger('dbready', db);
+			$(document).trigger('dbready');
 		}
 	}
-	,onDbReady: function(evt, db) {
-		ko.applyBindings(new CircuitFactoryViewModel(db));
+	,onDbReady: function(evt) {
+		ko.applyBindings(new CircuitFactoryViewModel(dal));
 
-		db.transaction(function(tx){tx.executeSql('SELECT * FROM EXERCISE');}, function(){console.log("ERROR",arguments);}, function(){console.log("SUCCESS",arguments)})
-		
 		$("#loading-overlay").fadeOut(1000);
 	}
 	,resetApp: function(){

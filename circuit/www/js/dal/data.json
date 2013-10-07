@@ -1,0 +1,202 @@
+[
+  {
+    "exercise":"Situp",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"Bridge",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"V-Up",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"Plank",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"Stability Ball Pike",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"Stability Ball Plank",
+    "bodyPart":"Abs"
+  },
+  {
+    "exercise":"Leg Raise",
+    "bodyPart":"Adductors"
+  },
+  {
+    "exercise":"Cable Adduction",
+    "bodyPart":"Adductors"
+  },
+  {
+    "exercise":"Biceps Curl",
+    "bodyPart":"Biceps"
+  },
+  {
+    "exercise":"Calf Raise",
+    "bodyPart":"Biceps"
+  },
+  {
+    "exercise":"Wide Pushups",
+    "bodyPart":"Biceps"
+  },
+  {
+    "exercise":"Dive Bomber Push Ups",
+    "bodyPart":"Biceps"
+  },
+  {
+    "exercise":"Bridge",
+    "bodyPart":"Chest"
+  },
+  {
+    "exercise":"Glute Kickback",
+    "bodyPart":"Chest"
+  },
+  {
+    "exercise":"Iron Chair",
+    "bodyPart":"Chest"
+  },
+  {
+    "exercise":"Barbell Clean",
+    "bodyPart":"Glutes"
+  },
+  {
+    "exercise":"Barbell Good Morining",
+    "bodyPart":"Glutes"
+  },
+  {
+    "exercise":"Stability Bal Leg Curl ",
+    "bodyPart":"Glutes"
+  },
+  {
+    "exercise":"Chin Ups",
+    "bodyPart":"Glutes"
+  },
+  {
+    "exercise":"Pull Ups",
+    "bodyPart":"Hamstring"
+  },
+  {
+    "exercise":"Barbell Pullover",
+    "bodyPart":"Hamstring"
+  },
+  {
+    "exercise":"Inverted Row",
+    "bodyPart":"Hamstring"
+  },
+  {
+    "exercise":"Barbell Row",
+    "bodyPart":"Hamstring"
+  },
+  {
+    "exercise":"Cable Face Pull ",
+    "bodyPart":"Lats"
+  },
+  {
+    "exercise":"Single Leg Deadlift",
+    "bodyPart":"Lats"
+  },
+  {
+    "exercise":"Superman",
+    "bodyPart":"Lats"
+  },
+  {
+    "exercise":"Side Plank",
+    "bodyPart":"Lats"
+  },
+  {
+    "exercise":"Heel Touch",
+    "bodyPart":"Lats"
+  },
+  {
+    "exercise":"Dumbell Wood Chopper",
+    "bodyPart":"Lower Back"
+  },
+  {
+    "exercise":"Barbell Side Bend",
+    "bodyPart":"Lower Back"
+  },
+  {
+    "exercise":"Squats",
+    "bodyPart":"Lower Back"
+  },
+  {
+    "exercise":"Wall Sit",
+    "bodyPart":"Lower Back"
+  },
+  {
+    "exercise":"Scissor Kick",
+    "bodyPart":"Obliques"
+  },
+  {
+    "exercise":"Leg Bent",
+    "bodyPart":"Obliques"
+  },
+  {
+    "exercise":"Dumbell Squats",
+    "bodyPart":"Obliques"
+  },
+  {
+    "exercise":"Lunge ",
+    "bodyPart":"Obliques"
+  },
+  {
+    "exercise":"Moutain Climber",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Push ups",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Dumbell Raise",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Shoulder Press",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Cable Raise",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Dumbbell Arm Circles",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Jumping Jacks",
+    "bodyPart":"Quads"
+  },
+  {
+    "exercise":"Preacher Curl",
+    "bodyPart":"Shoulder"
+  },
+  {
+    "exercise":"Stability Ball Bicep Curl",
+    "bodyPart":"Shoulder"
+  },
+  {
+    "exercise":"Barbell Dead Lift",
+    "bodyPart":"Shoulder"
+  },
+  {
+    "exercise":"Hip Extension ",
+    "bodyPart":"Shoulder"
+  },
+  {
+    "exercise":"Dumbbell Push Press",
+    "bodyPart":"Shoulder"
+  },
+  {
+    "exercise":"Cable Abduction",
+    "bodyPart":"Abductors"
+  },
+  {
+    "exercise":"Dumbbell Hip Abduction",
+    "bodyPart":"Abductors"
+  }
+]
