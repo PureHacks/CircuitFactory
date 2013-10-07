@@ -62,7 +62,7 @@
 			<div class="app">
 				<nav class="top-bar">
 					<button class="left" data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
-					<button class="right" id="GO!" data-bind="click: changeScreen.bind($data, 'circuit-interval')">GO!</button>
+					<button class="right" id="GO!" data-bind="click: startCircuit">GO!</button>
 				</nav>
 
 				<div class="content">
@@ -83,6 +83,9 @@
 				
 				<div class="content">
 					<h2 class="interval">Do your Circuit</h2>
+
+
+					<div data-bind="template: { name: 'excercise-template', foreach: currentCircuit().excercises }"></div>
 
 					<p>
 						<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
@@ -115,6 +118,16 @@
 				</div>
 			</div>
 		</script>
+
+
+		<script type="text/html" id="excercise-template">
+			<div class="clear">
+				<b data-bind="text: exercise"></b>
+
+				<p data-bind="text: bodyPart"></p>
+			</div>
+		</script>
+
 
 		<script src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/knob.js"></script>

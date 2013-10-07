@@ -1,9 +1,11 @@
-var Excercise = function() {
-	this.id = "";
-	this.name = "";
-	this.image = "";
-	this.intensity = ko.observable();
-	this.coreAspect = ko.observableArray();
+var Excercise = function(data) {
+	var self = this;
+
+	self.id = data.id||"";
+	self.exercise = data.exercise||"";
+	self.image = "";
+	self.intensity = "";
+	self.bodyPart = data.bodyPart||"";
 };
 
 var Circuit = function(data) {
@@ -108,12 +110,22 @@ var Circuit = function(data) {
 	};
 
 	self.start = function(){
-		console.log(self.duration());
+		console.log("start", self.duration());
 
-		dal.getRandomCircute(2,function(result){
-			console.log("Query Result", result);
-		});
-		
-		self.nextExercise(true);
+		//todo: calculate this
+		var repeatsBodypart = 2;
+
+		if(self.excercises().length == 0){
+			dal.getRandomCircute(repeatsBodypart, function(newExcercises){
+
+				self.excercises($.map(newExcercises, function(excercise) {
+					return new Excercise(excercise);
+				}));
+
+				self.nextExercise(true);
+			});
+		}else{
+			self.nextExercise(true);
+		}
 	};
 };

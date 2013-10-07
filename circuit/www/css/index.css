@@ -140,6 +140,7 @@ div#get-started button:first-child {
 
 /* helpers */
 .hide {display: none;}
+.clear {clear: both;}
 
 .blink {
 	animation:fade 3000ms infinite;
