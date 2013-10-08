@@ -16,7 +16,17 @@ var CircuitFactoryViewModel = function(dal) {
 	self.startCircuit = function(){
 		self.changeScreen('circuit-interval');
 		self.currentCircuit().start();
+		$(self.currentCircuit()).on("circuitDone", function(){
+			self.changeScreen('circuit-summary');			
+		});
 	};
+
+	self.cancelCircuit = function(){
+		self.changeScreen('circuit-home');
+		self.currentCircuit().cancel();
+	};
+
+
 
 	self.changeScreen = function(id){
 		self.activeScreen(id);

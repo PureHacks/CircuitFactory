@@ -79,6 +79,11 @@ h2 {
 	font-weight: 600;
 }
 
+h3 {
+	font-size: 2em;
+	font-weight: 600;
+}
+
 
 /*Global*/
 #loading-overlay {position:fixed; top:0; right:0; bottom:0; left:0; background: #ccc;}
@@ -133,9 +138,13 @@ div#get-started button:first-child {
 
 /* Time Page */
 
+.excercise {clear: both; }
+.excercise {background:#ccc;}
+.excercise.isActive {background:#f00;}
+.excercise.isInRestMode {background:#0f0;}
 
-
-
+.arcordeon {overflow: hidden; height: 0;}
+.isActive .arcordeon {height: auto;}
 
 
 /* helpers */

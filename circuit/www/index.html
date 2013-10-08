@@ -44,6 +44,9 @@
 			</section>
 		</div>
 
+
+
+
 		<script type="text/html" id="circuit-home">
 			<div id="home">
 				<h1>Circuit Factory</h1>
@@ -57,6 +60,9 @@
 				</div>
 			</div>
 		</script>
+
+
+
 
 		<script type="text/html" id="circuit-setup">
 			<div class="app">
@@ -75,24 +81,35 @@
 			</div>
 		</script>
 
+
+
+
 		<script type="text/html" id="circuit-interval">
 			<div class="app">
 				<nav class="top-bar">
-					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
+					<button data-bind="click: cancelCircuit">Back</button>
 				</nav>
 				
-				<div class="content">
+				<div class="content" data-bind="with: currentCircuit()">
 					<h2 class="interval">Do your Circuit</h2>
+					<br/><br/>
+					<div id="timer" data-bind="text: currentTimeSec"></div>
+					<div>Done: <i data-bind="text: exercisesCompleted"></i></div>
 
+					<!-- ko if : currentExcercise -->
+						<b data-bind="text : currentExcercise().exercise"></b>
+					<!-- /ko -->
+					
+					<br/><br/>
 
-					<div data-bind="template: { name: 'excercise-template', foreach: currentCircuit().excercises }"></div>
+					<div data-bind="template: { name: 'excercise-template', foreach: excercises }"></div>
 
-					<p>
-						<button data-bind="click: changeScreen.bind($data, 'circuit-summary')">To Summary (moved automatically)</button>
-					</p>
 				</div>
 			</div>
 		</script>
+
+
+
 
 		<script type="text/html" id="circuit-summary">
 			<div class="app">
@@ -107,6 +124,9 @@
 			</div>
 		</script>
 
+
+
+
 		<script type="text/html" id="circuit-archive">
 			<div class="app">
 				<nav class="top-bar">
@@ -120,13 +140,17 @@
 		</script>
 
 
-		<script type="text/html" id="excercise-template">
-			<div class="clear">
-				<b data-bind="text: exercise"></b>
 
-				<p data-bind="text: bodyPart"></p>
+
+		<script type="text/html" id="excercise-template">
+			<div class="excercise" data-bind="css : {isActive : isActive, isInRestMode : $parent.isInRestMode}">
+				<h3 data-bind="text: exercise"></h3>
+
+				<div class="arcordeon" data-bind="text: bodyPart"></div>
 			</div>
 		</script>
+
+
 
 
 		<script src="js/jquery-2.0.3.min.js"></script>

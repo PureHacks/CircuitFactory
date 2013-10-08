@@ -1,4 +1,6 @@
 var Excercise = function(data) {
+	data = data|| {};
+
 	var self = this;
 
 	self.id = data.id||"";
@@ -6,39 +8,47 @@ var Excercise = function(data) {
 	self.image = "";
 	self.intensity = "";
 	self.bodyPart = data.bodyPart||"";
+	self.isActive = ko.observable(false);
 };
 
 var Circuit = function(data) {
 	data = data|| {};
+	var exercisesPerSet = 6;
+
 	var self = this;
-	var currentTimeSec = 0;
 
 	var restTimer;
 	var exerciseTimer;
-
+	self.currentTimeSec = ko.observable(0);
 
 	self.id = "";
 	self.name = ko.observable();
 	self.dateCreated = "";
 	self.dateLastFinished = ko.observable();
 
+
 	//set to default values
-	self.duration = ko.observable(data.duration||6);
-	self.timeExercise = ko.observable(data.timeExercise||6);
+	self.duration = ko.observable(data.duration||exercisesPerSet);
+	self.timeExercise = ko.observable(data.timeExercise||4);
 	self.timeRest = ko.observable(data.timeRest||2);
 
 
 	self.intensity = ko.observable(data.intensity||2);
 	self.excercises = ko.observableArray(data.excercises||[]); //to grenerate random exercises
 
-	self.currentExcercise = ko.observable();
+
+
 	self.isInRestMode = ko.observable(false);
 	self.exercisesCompleted = ko.observable(0);
+
+	self.currentExcercise = ko.computed(function(){
+		return self.excercises()[self.exercisesCompleted()];
+	});
 
 	var startRestMode = function(onRestCompleted){
 		var currentIntervalDuration = 0;
 		restTimer = setInterval(function(){
-			currentTimeSec++;
+			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeRest()){
 				console.log("rest timer", currentIntervalDuration);
 				currentIntervalDuration++;
@@ -56,8 +66,9 @@ var Circuit = function(data) {
 
 	var startExcerciseMode = function(onExerciseCompleted){
 		var currentIntervalDuration = 0;
+
 		exerciseTimer = setInterval(function(){
-			currentTimeSec++;
+			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeExercise()){
 				console.log("exercise timer", currentIntervalDuration);
 				currentIntervalDuration++;
@@ -75,19 +86,22 @@ var Circuit = function(data) {
 	self.nextExercise = function(skipRest){
 		var currentIntervalDuration = 0;
 
-
 		//start in restMode unless skipped
 		self.isInRestMode(skipRest !== true);
 
 		var exerciseModeInit = function(){
 			startExcerciseMode(function(){
 				
-				if(currentTimeSec < (self.duration() * 10)){
+				if(self.exercisesCompleted()+1 < self.excercises().length){
+					self.excercises()[self.exercisesCompleted()].isActive(false);
 					self.exercisesCompleted(self.exercisesCompleted()+1);
-					console.log("NEXT EXERCISE", self.exercisesCompleted(), currentTimeSec, self.duration() * 10);
+					self.excercises()[self.exercisesCompleted()].isActive(true);
+
+					console.log("NEXT EXERCISE", self.exercisesCompleted(), self.currentTimeSec(), self.duration() * 10);
 					
 					self.nextExercise();
 				}else{
+					$(self).trigger("circuitDone").off("circuitDone");
 					console.log("->>>> ALL DONE");
 				}
 			});
@@ -106,25 +120,27 @@ var Circuit = function(data) {
 	self.cancel = function(){
 		clearInterval(restTimer);
 		clearInterval(exerciseTimer);
+		$(self).off("circuitDone");
 		console.log("CANCELED");
 	};
 
 	self.start = function(){
-		console.log("start", self.duration());
+		var repeatBodypart = self.duration()/exercisesPerSet;
 
-		//todo: calculate this
-		var repeatsBodypart = 2;
+		console.log("start", repeatBodypart, self.duration());
 
 		if(self.excercises().length == 0){
-			dal.getRandomCircute(repeatsBodypart, function(newExcercises){
+			dal.getRandomCircute(repeatBodypart, function(newExcercises){
 
 				self.excercises($.map(newExcercises, function(excercise) {
+					console.log(excercise);
 					return new Excercise(excercise);
 				}));
-
+				self.excercises()[0].isActive(true);
 				self.nextExercise(true);
 			});
 		}else{
+			self.excercises()[0].isActive(true);
 			self.nextExercise(true);
 		}
 	};
