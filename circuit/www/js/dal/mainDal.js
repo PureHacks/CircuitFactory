@@ -73,12 +73,12 @@
 
 			var transactionCode = function(tx){
 				tx.executeSql("DROP TABLE IF EXISTS EXERCISE");
-				tx.executeSql("CREATE TABLE IF NOT EXISTS EXERCISE (id unique, exercise, bodyPart)");
+				tx.executeSql("CREATE TABLE IF NOT EXISTS EXERCISE (id unique, exercise, bodyPart, coreAspect)");
 
-				var queryBase = "INSERT INTO EXERCISE (id, exercise, bodyPart) VALUES (?, ?, ?)";
+				var queryBase = "INSERT INTO EXERCISE (id, exercise, bodyPart, coreAspect) VALUES (?, ?, ?, ?)";
 
 				$.each(data, function(index, row) {
-					tx.executeSql(queryBase, [index, row.exercise, row.bodyPart]);
+					tx.executeSql(queryBase, [index, row.exercise, row.bodyPart, row.coreAspect]);
 				});
 			};
 
@@ -94,6 +94,10 @@
 		util.runQuery('SELECT DISTINCT bodyPart FROM EXERCISE', [], onSuccess);
 	};
 
+	dal.getAllCoreAspects = function(onSuccess){
+		util.runQuery('SELECT DISTINCT coreAspect FROM EXERCISE', [], onSuccess);
+	};
+
 	dal.getExcercises = function(numberOfItems, onSuccess){
 		util.runQuery('SELECT * FROM EXERCISE LIMIT ?', [numberOfItems], onSuccess);
 	};
@@ -106,15 +110,15 @@
 	dal.getRandomCircute = function(repeatsBodypart, onSuccess){
 		dal.getAllExcercises(function(exercises){
 			var result = [], bodyPartExercise;
-			var bodyParts = util.unique(jQuery.map(exercises, function(exercise, index) {
-			  return exercise.bodyPart;
+			var coreAspects = util.unique(jQuery.map(exercises, function(exercise, index) {
+			  return exercise.coreAspect;
 			}));
 
 			exercises = util.shuffle(exercises);
 
-			$.each(bodyParts, function(i, bodyPart) {
+			$.each(coreAspects, function(i, coreAspect) {
 				bodyPartExercise = $.grep(exercises, function(exercise){
-					return exercise.bodyPart == bodyPart;
+					return exercise.coreAspect == coreAspect;
 				});
 
 				for(var i = 0; i < repeatsBodypart; i++){

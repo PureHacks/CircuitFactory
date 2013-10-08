@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"con",
+				"console.log(message);"
+			],
+			[
+				"jQue",
+				"jQuery.map	jQuery.map"
+			],
+			[
+				"clear",
+				"clearInterval();"
+			],
+			[
 				"ma",
 				"margin-top"
 			],
@@ -38,10 +50,6 @@
 			[
 				"bacground",
 				"background-colour"
-			],
-			[
-				"con",
-				"console"
 			],
 			[
 				"in",
@@ -160,29 +168,10 @@
 	"buffers":
 	[
 		{
-			"file": "config.xml",
-			"settings":
-			{
-				"buffer_size": 3566,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<!--\n	Licensed to the Apache Software Foundation (ASF) under one\n	or more contributor license agreements.  See the NOTICE file\n	distributed with this work for additional information\n	regarding copyright ownership.  The ASF licenses this file\n	to you under the Apache License, Version 2.0 (the\n	\"License\"); you may not use this file except in compliance\n	with the License.  You may obtain a copy of the License at\n\n	http://www.apache.org/licenses/LICENSE-2.0\n\n	Unless required by applicable law or agreed to in writing,\n	software distributed under the License is distributed on an\n	\"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n	 KIND, either express or implied.  See the License for the\n	specific language governing permissions and limitations\n	under the License.\n-->\n<html>\n	<head>\n		<meta charset=\"utf-8\" />\n		<meta name=\"format-detection\" content=\"telephone=no\" />\n		<meta name=\"viewport\" content=\"user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi\" />\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"css/index.css\" />\n		<title>Circuit Factory</title>\n	</head>\n	<body>\n		<div id=\"loading-overlay\">\n			<i class=\"blink\">Loading&hellip;</i>\n		</div>\n		<div class=\"app\">\n			<section id=\"mainHolder\" data-bind=\"template: { name: 'circuit-home', data: {} }\">\n			</section>\n		</div>\n\n		<script type=\"text/html\" id=\"circuit-home\">\n			<h2>Welcome to Circuit Factory</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-setup\">\n			<h2>Build your Circuit</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-interval\">\n			<h2>Do your Circuit</h2>\n		</script>\n\n		<script type=\"text/html\" id=\"circuit-summary\">\n			<h2>Circuit Overview</h2>\n		</script>\n\n\n		<script src=\"js/jquery-2.0.3.min.js\"></script>\n		<script src=\"js/knockout-2.3.0.js\"></script>\n		<script src=\"js/models/models.js\"></script>\n		<script src=\"js/models/models.js\"></script>	\n		<script src=\"js/knockout-2.3.0.js\"></script>	\n\n		<script src=\"phonegap.js\"></script>\n		<script src=\"js/index.js\"></script>\n		<script>\n			app.initialize();\n		</script>\n	</body>\n</html>\n",
 			"file": "index.html",
-			"file_size": 2062,
-			"file_write_time": 130254581296011830,
 			"settings":
 			{
-				"buffer_size": 2140,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/index.css",
-			"settings":
-			{
-				"buffer_size": 2498,
+				"buffer_size": 4980,
 				"line_ending": "Windows"
 			}
 		},
@@ -190,36 +179,63 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 1591,
+				"buffer_size": 1739,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/ViewModels/app.js",
+			"file": "js/models/models.js",
 			"settings":
 			{
-				"buffer_size": 91,
-				"line_ending": "Windows",
-				"name": "var CircuitFactory = {"
+				"buffer_size": 3187,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/dal/mainDal.js",
+			"settings":
+			{
+				"buffer_size": 3275,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/viewModels/viewModels.js",
+			"settings":
+			{
+				"buffer_size": 599,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/index.css",
+			"settings":
+			{
+				"buffer_size": 3708,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 242.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"inde",
 				"Indentation: Convert to Tabs"
 			],
 			[
 				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -284,6 +300,16 @@
 	},
 	"file_history":
 	[
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/dal/data.json",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/ko-binding-handlers.js",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/dal/data.js",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/viewModels/viewModels.js",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/css/index.css",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/initData/database.js",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/dal/setupDb.js",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/config.xml",
+		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/js/knob.js",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
 		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/.git/config",
 		"/D/Work Documents/Nurun/Hackathon/CircuitFactory/Phonegap/CircuitFactory/circuit/www/circuit.sublime-project",
 		"/D/Work Documents/Private Projects/Stylify/Presentation/test phantom js scripts/responsive-test-demo.js",
@@ -389,7 +415,6 @@
 		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/html/css/main.css",
 		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/inc/custom-header.php",
 		"/D/Work Documents/Private Projects/Park Teakwon-Do/website/xampp-portable/htdocs/wordpress/wp-content/themes/Itf-Ac/languages/twentytwelve.pot",
-		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
 		"/D/Work Documents/Testbed/Play-apps/samples/java/helloworld/project/Build.scala",
@@ -402,16 +427,7 @@
 		"/D/Work Documents/Testbed/Play-apps/play-mustache/play-mustache/documentation/manual/home.textile",
 		"/D/Work Documents/Testbed/node-js/appfog/midge/public/index.html",
 		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/express/package.json",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/public/css/main.css",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/public/js/main.js",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/socket.io/lib/socket.js",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/node_modules/socket.io/lib/socket.io.js",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/README",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/index.html",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/app.js",
-		"/D/Work Documents/Testbed/node-js/appfog/midge/server.js",
-		"/D/Work Documents/Aro/Galway Advertiser/html/includes/styles/main.css",
-		"/D/Work Documents/Aro/Galway Advertiser/html/includes/fonts/fonts.css"
+		"/D/Work Documents/Testbed/node-js/appfog/midge/public/css/main.css"
 	],
 	"find":
 	{
@@ -419,7 +435,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			""
@@ -430,6 +446,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getAllExcercises",
+			"circuit-interval",
+			"start",
+			"start\n",
+			"getRandomCircute",
+			"getAllBodiparts",
+			"db",
+			"getExcercises",
+			"setupDb",
+			"getExcercises",
+			"setupDb",
+			"each",
+			"init",
+			"start",
+			"success!",
+			"success",
+			"console.log(\"NEXT EXERCISE\");",
+			"<<<",
+			"head",
+			"'",
 			"receivedEvent",
 			"bindEvents",
 			"	",
@@ -537,34 +573,15 @@
 			"figcaption\n",
 			"setColour",
 			"id=\"color-",
-			"setColour",
-			"background-colour",
-			"main-background-colour",
-			"background-colour",
-			"color",
-			"colours",
-			"orderColourResponse",
-			"coloursReturn",
-			"color",
-			"colorProperties",
-			"colours",
-			"baseTextCol",
-			"bodyBgCol",
-			"coloursBgPreReturn",
-			"coloursPreReturn",
-			"logo",
-			"tempImgPath",
-			"homepage-img-holder",
-			"console",
-			"deleteFile",
-			"screenshotCacheTime"
+			"setColour"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"\"",
 			"",
 			"id=\"bg-color-",
 			"id=\"text-color-",
@@ -621,51 +638,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config.xml",
-					"settings":
-					{
-						"buffer_size": 3566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1098,
-								1098
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2140,
+						"buffer_size": 4980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1391,
-								1391
+								4405,
+								4405
 							]
 						],
 						"settings":
@@ -675,91 +664,142 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 287.0,
+						"translation.y": 1713.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 1739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1638,
+								1638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "css/index.css",
+					"file": "js/models/models.js",
 					"settings":
 					{
-						"buffer_size": 2498,
+						"buffer_size": 3187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								158,
+								166
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "js/index.js",
+					"file": "js/dal/mainDal.js",
 					"settings":
 					{
-						"buffer_size": 1591,
+						"buffer_size": 3275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1544,
-								1526
+								2803,
+								2803
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 150.0,
+						"translation.y": 1200.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "js/ViewModels/app.js",
+					"file": "js/viewModels/viewModels.js",
 					"settings":
 					{
-						"buffer_size": 91,
+						"buffer_size": 599,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								57,
-								57
+								317,
+								329
 							]
 						],
 						"settings":
 						{
-							"auto_name": "var CircuitFactory = {",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/index.css",
+					"settings":
+					{
+						"buffer_size": 3708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3442,
+								3447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1725.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -808,6 +848,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"knob",
+				"js/knob.js"
+			],
 			[
 				"fol",
 				"Presentation/follow.js"

@@ -1,202 +1,252 @@
 [
   {
-    "exercise":"Situp",
-    "bodyPart":"Abs"
+    "exercise": "Situp",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Bridge",
-    "bodyPart":"Abs"
+    "exercise": "Bridge",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"V-Up",
-    "bodyPart":"Abs"
+    "exercise": "V-Up",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Plank",
-    "bodyPart":"Abs"
+    "exercise": "Plank",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Stability Ball Pike",
-    "bodyPart":"Abs"
+    "exercise": "Stability Ball Pike",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Stability Ball Plank",
-    "bodyPart":"Abs"
+    "exercise": "Stability Ball Plank",
+    "bodyPart": "Abs",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Leg Raise",
-    "bodyPart":"Adductors"
+    "exercise": "Leg Raise",
+    "bodyPart": "Adductors",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Cable Adduction",
-    "bodyPart":"Adductors"
+    "exercise": "Cable Adduction",
+    "bodyPart": "Adductors",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Biceps Curl",
-    "bodyPart":"Biceps"
+    "exercise": "Biceps Curl",
+    "bodyPart": "Biceps",
+    "coreAspect": "Arms"
   },
   {
-    "exercise":"Calf Raise",
-    "bodyPart":"Biceps"
+    "exercise": "Calf Raise",
+    "bodyPart": "Biceps",
+    "coreAspect": "Arms"
   },
   {
-    "exercise":"Wide Pushups",
-    "bodyPart":"Biceps"
+    "exercise": "Wide Pushups",
+    "bodyPart": "Biceps",
+    "coreAspect": "Arms"
   },
   {
-    "exercise":"Dive Bomber Push Ups",
-    "bodyPart":"Biceps"
+    "exercise": "Dive Bomber Push Ups",
+    "bodyPart": "Biceps",
+    "coreAspect": "Arms"
   },
   {
-    "exercise":"Bridge",
-    "bodyPart":"Chest"
+    "exercise": "Bridge",
+    "bodyPart": "Chest",
+    "coreAspect": "Upper Body"
   },
   {
-    "exercise":"Glute Kickback",
-    "bodyPart":"Chest"
+    "exercise": "Glute Kickback",
+    "bodyPart": "Chest",
+    "coreAspect": "Upper Body"
   },
   {
-    "exercise":"Iron Chair",
-    "bodyPart":"Chest"
+    "exercise": "Iron Chair",
+    "bodyPart": "Chest",
+    "coreAspect": "Upper Body"
   },
   {
-    "exercise":"Barbell Clean",
-    "bodyPart":"Glutes"
+    "exercise": "Barbell Clean",
+    "bodyPart": "Glutes",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Barbell Good Morining",
-    "bodyPart":"Glutes"
+    "exercise": "Barbell Good Morining",
+    "bodyPart": "Glutes",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Stability Bal Leg Curl ",
-    "bodyPart":"Glutes"
+    "exercise": "Stability Bal Leg Curl",
+    "bodyPart": "Glutes",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Chin Ups",
-    "bodyPart":"Glutes"
+    "exercise": "Chin Ups",
+    "bodyPart": "Glutes",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Pull Ups",
-    "bodyPart":"Hamstring"
+    "exercise": "Pull Ups",
+    "bodyPart": "Hamstring",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Barbell Pullover",
-    "bodyPart":"Hamstring"
+    "exercise": "Barbell Pullover",
+    "bodyPart": "Hamstring",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Inverted Row",
-    "bodyPart":"Hamstring"
+    "exercise": "Inverted Row",
+    "bodyPart": "Hamstring",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Barbell Row",
-    "bodyPart":"Hamstring"
+    "exercise": "Barbell Row",
+    "bodyPart": "Hamstring",
+    "coreAspect": "Lower Body"
   },
   {
-    "exercise":"Cable Face Pull ",
-    "bodyPart":"Lats"
+    "exercise": "Cable Face Pull",
+    "bodyPart": "Lats",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Single Leg Deadlift",
-    "bodyPart":"Lats"
+    "exercise": "Single Leg Deadlift",
+    "bodyPart": "Lats",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Superman",
-    "bodyPart":"Lats"
+    "exercise": "Superman",
+    "bodyPart": "Lats",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Side Plank",
-    "bodyPart":"Lats"
+    "exercise": "Side Plank",
+    "bodyPart": "Lats",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Heel Touch",
-    "bodyPart":"Lats"
+    "exercise": "Heel Touch",
+    "bodyPart": "Lats",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Dumbell Wood Chopper",
-    "bodyPart":"Lower Back"
+    "exercise": "Dumbell Wood Chopper",
+    "bodyPart": "Lower Back",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Barbell Side Bend",
-    "bodyPart":"Lower Back"
+    "exercise": "Barbell Side Bend",
+    "bodyPart": "Lower Back",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Squats",
-    "bodyPart":"Lower Back"
+    "exercise": "Squats",
+    "bodyPart": "Lower Back",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Wall Sit",
-    "bodyPart":"Lower Back"
+    "exercise": "Wall Sit",
+    "bodyPart": "Lower Back",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Scissor Kick",
-    "bodyPart":"Obliques"
+    "exercise": "Scissor Kick",
+    "bodyPart": "Obliques",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Leg Bent",
-    "bodyPart":"Obliques"
+    "exercise": "Leg Bent",
+    "bodyPart": "Obliques",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Dumbell Squats",
-    "bodyPart":"Obliques"
+    "exercise": "Dumbell Squats",
+    "bodyPart": "Obliques",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Lunge ",
-    "bodyPart":"Obliques"
+    "exercise": "Lunge",
+    "bodyPart": "Obliques",
+    "coreAspect": "Core"
   },
   {
-    "exercise":"Moutain Climber",
-    "bodyPart":"Quads"
+    "exercise": "Moutain Climber",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Push ups",
-    "bodyPart":"Quads"
+    "exercise": "Push ups",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Dumbell Raise",
-    "bodyPart":"Quads"
+    "exercise": "Dumbell Raise",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Shoulder Press",
-    "bodyPart":"Quads"
+    "exercise": "Shoulder Press",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Cable Raise",
-    "bodyPart":"Quads"
+    "exercise": "Cable Raise",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Dumbbell Arm Circles",
-    "bodyPart":"Quads"
+    "exercise": "Dumbbell Arm Circles",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Jumping Jacks",
-    "bodyPart":"Quads"
+    "exercise": "Jumping Jacks",
+    "bodyPart": "Quads",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Preacher Curl",
-    "bodyPart":"Shoulder"
+    "exercise": "Preacher Curl",
+    "bodyPart": "Shoulder",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Stability Ball Bicep Curl",
-    "bodyPart":"Shoulder"
+    "exercise": "Stability Ball Bicep Curl",
+    "bodyPart": "Shoulder",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Barbell Dead Lift",
-    "bodyPart":"Shoulder"
+    "exercise": "Barbell Dead Lift",
+    "bodyPart": "Shoulder",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Hip Extension ",
-    "bodyPart":"Shoulder"
+    "exercise": "Hip Extension",
+    "bodyPart": "Shoulder",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Dumbbell Push Press",
-    "bodyPart":"Shoulder"
+    "exercise": "Dumbbell Push Press",
+    "bodyPart": "Shoulder",
+    "coreAspect": "Back"
   },
   {
-    "exercise":"Cable Abduction",
-    "bodyPart":"Abductors"
+    "exercise": "Cable Abduction",
+    "bodyPart": "Abductors",
+    "coreAspect": "Legs"
   },
   {
-    "exercise":"Dumbbell Hip Abduction",
-    "bodyPart":"Abductors"
+    "exercise": "Dumbbell Hip Abduction",
+    "bodyPart": "Abductors",
+    "coreAspect": "Legs"
   }
 ]
