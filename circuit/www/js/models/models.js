@@ -50,11 +50,9 @@ var Circuit = function(data) {
 		restTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeRest()){
-				console.log("rest timer", currentIntervalDuration);
 				currentIntervalDuration++;
 			}else{
 				clearInterval(restTimer);
-				console.log("rest timer done", currentIntervalDuration);
 				self.isInRestMode(false);
 				if(typeof onRestCompleted === "function"){
 					onRestCompleted();
@@ -74,7 +72,6 @@ var Circuit = function(data) {
 				currentIntervalDuration++;
 			}else{
 				clearInterval(exerciseTimer);
-				console.log("exercise timer done", currentIntervalDuration);
 				self.isInRestMode(true);
 				if(typeof onExerciseCompleted === "function"){
 					onExerciseCompleted();
@@ -97,12 +94,11 @@ var Circuit = function(data) {
 					self.exercisesCompleted(self.exercisesCompleted()+1);
 					self.excercises()[self.exercisesCompleted()].isActive(true);
 
-					console.log("NEXT EXERCISE", self.exercisesCompleted(), self.currentTimeSec(), self.duration() * 10);
+					//console.log("NEXT EXERCISE", self.exercisesCompleted(), self.currentTimeSec(), self.duration() * 10);
 					
 					self.nextExercise();
 				}else{
 					$(self).trigger("circuitDone").off("circuitDone");
-					console.log("->>>> ALL DONE");
 				}
 			});
 		};
@@ -121,19 +117,15 @@ var Circuit = function(data) {
 		clearInterval(restTimer);
 		clearInterval(exerciseTimer);
 		$(self).off("circuitDone");
-		console.log("CANCELED");
 	};
 
 	self.start = function(){
 		var repeatBodypart = self.duration()/exercisesPerSet;
 
-		console.log("start", repeatBodypart, self.duration());
-
 		if(self.excercises().length == 0){
 			dal.getRandomCircute(repeatBodypart, function(newExcercises){
 
 				self.excercises($.map(newExcercises, function(excercise) {
-					console.log(excercise);
 					return new Excercise(excercise);
 				}));
 				self.excercises()[0].isActive(true);

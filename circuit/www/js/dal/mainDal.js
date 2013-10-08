@@ -61,13 +61,13 @@
 	};
 
 	var genereicDbError = function(err) {
-		console.log("Error processing SQL: "+err.code);
+		alert("Error processing SQL: "+err.code);
 	};
 
 	dal.setupDb = function(onSuccess){
 		$.getJSON("/js/dal/data.json", function(data) {	
 			var onTransactionSuccess = function(){
-				console.log("DAL> Tables Initialized");
+				alert("DAL> Tables Initialized");
 				onSuccess();
 			};
 
