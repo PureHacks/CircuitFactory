@@ -28,13 +28,17 @@ var app = {
 	// Bind any events that are required on startup. Common events are:
 	// 'load', 'deviceready', 'offline', and 'online'.
 	,bindEvents: function() {
-		$(document)
-			.on('deviceready', this.onDeviceReady)
-			.on('dbready', this.onDbReady);
+		console.log("bindEvents");
+		$(function(){
+			console.log("bindEvents2");
+			$(document)
+				.on('deviceready', this.onDeviceReady)
+				.on('dbready', this.onDbReady);
+		});
 	}
 	,onDeviceReady: function() {
 		//var dbCreated = window.localStorage.getItem("dbCreated");
-
+		console.log("onDeviceReady");
 
 		//TEMP: 
 		var dbCreated = "1";
@@ -45,11 +49,13 @@ var app = {
 				window.localStorage.setItem("dbCreated", "1"); 
 				$(document).trigger('dbready');
 			});*/
+			$(document).trigger('dbready');
 		} else {
 			$(document).trigger('dbready');
 		}
 	}
 	,onDbReady: function(evt) {
+		console.log("onDbReady");
 		//ko.applyBindings(new CircuitFactoryViewModel(dal));
 		ko.applyBindings(new CircuitFactoryViewModel());
 
