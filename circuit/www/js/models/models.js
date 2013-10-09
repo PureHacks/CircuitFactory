@@ -68,7 +68,7 @@ var Circuit = function(data) {
 		exerciseTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeExercise()){
-				console.log("exercise timer", currentIntervalDuration);
+				//console.log("exercise timer", currentIntervalDuration);
 				currentIntervalDuration++;
 			}else{
 				clearInterval(exerciseTimer);
@@ -122,9 +122,10 @@ var Circuit = function(data) {
 	self.start = function(){
 
 		var repeatBodypart = self.duration()/exercisesPerSet;
-		
+
 		if(self.excercises().length == 0 || self.excercises().length != (repeatBodypart * exercisesPerSet)){
-			dal.getRandomCircute(repeatBodypart, function(newExcercises){
+			//dal.getRandomCircute(repeatBodypart, function(newExcercises){
+			$.getJSON("/js/dal/data.json", function(newExcercises) {	
 
 				self.excercises($.map(newExcercises, function(excercise) {
 					return new Excercise(excercise);

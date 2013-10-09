@@ -67,7 +67,6 @@
 	dal.setupDb = function(onSuccess){
 		$.getJSON("/js/dal/data.json", function(data) {	
 			var onTransactionSuccess = function(){
-				alert("DAL> Tables Initialized");
 				onSuccess();
 			};
 

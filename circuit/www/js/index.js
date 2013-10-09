@@ -37,7 +37,7 @@ var app = {
 
 
 		//TEMP: 
-		dbCreated = "ForceDelete";
+		dbCreated = "1";
 
 		if(dbCreated !== "1"){
 			dal.setupDb(function(){
