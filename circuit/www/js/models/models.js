@@ -120,9 +120,10 @@ var Circuit = function(data) {
 	};
 
 	self.start = function(){
-		var repeatBodypart = self.duration()/exercisesPerSet;
 
-		if(self.excercises().length == 0){
+		var repeatBodypart = self.duration()/exercisesPerSet;
+		
+		if(self.excercises().length == 0 || self.excercises().length != (repeatBodypart * exercisesPerSet)){
 			dal.getRandomCircute(repeatBodypart, function(newExcercises){
 
 				self.excercises($.map(newExcercises, function(excercise) {

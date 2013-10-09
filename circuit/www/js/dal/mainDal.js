@@ -107,7 +107,7 @@
 	};
 
 
-	dal.getRandomCircute = function(repeatsBodypart, onSuccess){
+	dal.getRandomCircute = function(repeatBodypart, onSuccess){
 		dal.getAllExcercises(function(exercises){
 			var result = [], bodyPartExercise;
 			var coreAspects = util.unique(jQuery.map(exercises, function(exercise, index) {
@@ -120,8 +120,7 @@
 				bodyPartExercise = $.grep(exercises, function(exercise){
 					return exercise.coreAspect == coreAspect;
 				});
-
-				for(var i = 0; i < repeatsBodypart; i++){
+				for(var i = 0; i < repeatBodypart; i++){
 					result.push(bodyPartExercise[i]);
 				}
 			});
