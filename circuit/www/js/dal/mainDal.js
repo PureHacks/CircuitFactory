@@ -65,7 +65,7 @@
 	};
 
 	dal.setupDb = function(onSuccess){
-		$.getJSON("/js/dal/data.json", function(data) {	
+		$.getJSON("js/dal/data.json", function(data) {	
 			var onTransactionSuccess = function(){
 				onSuccess();
 			};

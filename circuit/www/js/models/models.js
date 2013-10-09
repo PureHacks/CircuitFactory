@@ -125,7 +125,7 @@ var Circuit = function(data) {
 
 		if(self.excercises().length == 0 || self.excercises().length != (repeatBodypart * exercisesPerSet)){
 			//dal.getRandomCircute(repeatBodypart, function(newExcercises){
-			$.getJSON("/js/dal/data.json", function(newExcercises) {	
+			$.getJSON("js/dal/data.json", function(newExcercises) {	
 
 				self.excercises($.map(newExcercises, function(excercise) {
 					return new Excercise(excercise);

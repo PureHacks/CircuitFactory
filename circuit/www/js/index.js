@@ -33,11 +33,11 @@ var app = {
 			.on('dbready', this.onDbReady);
 	}
 	,onDeviceReady: function() {
-		var dbCreated = window.localStorage.getItem("dbCreated");
+		//var dbCreated = window.localStorage.getItem("dbCreated");
 
 
 		//TEMP: 
-		dbCreated = "1";
+		var dbCreated = "1";
 
 		if(dbCreated !== "1"){
 			//temp
@@ -50,7 +50,8 @@ var app = {
 		}
 	}
 	,onDbReady: function(evt) {
-		ko.applyBindings(new CircuitFactoryViewModel(dal));
+		//ko.applyBindings(new CircuitFactoryViewModel(dal));
+		ko.applyBindings(new CircuitFactoryViewModel());
 
 		$("#loading-overlay").fadeOut(1000);
 	}
