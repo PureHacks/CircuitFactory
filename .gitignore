@@ -23,4 +23,4 @@ Desktop.ini
 $RECYCLE.BIN/
 
 
-.sublime-workspace
+*.sublime-workspace
