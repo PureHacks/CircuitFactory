@@ -40,10 +40,11 @@ var app = {
 		dbCreated = "1";
 
 		if(dbCreated !== "1"){
-			dal.setupDb(function(){
+			//temp
+			/*dal.setupDb(function(){
 				window.localStorage.setItem("dbCreated", "1"); 
 				$(document).trigger('dbready');
-			});
+			});*/
 		} else {
 			$(document).trigger('dbready');
 		}
