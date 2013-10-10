@@ -22,23 +22,22 @@ var app = {
 	initialize: function() {
 		this.bindEvents();
 	}
-	,db : null
 	// Bind Event Listeners
 	//
 	// Bind any events that are required on startup. Common events are:
 	// 'load', 'deviceready', 'offline', and 'online'.
 	,bindEvents: function() {
-		console.log("bindEvents");
-		$(function(){
-			console.log("bindEvents2");
+		//document.addEventListener('deviceready', this.onDeviceReady, false);
+		//$(function(){
+			$("#output").append('<div>bindEvents</div>');
 			$(document)
-				.on('deviceready', this.onDeviceReady)
-				.on('dbready', this.onDbReady);
-		});
+				.on('deviceready', app.onDeviceReady)
+				.on('dbready', app.onDbReady);
+		//});
 	}
 	,onDeviceReady: function() {
-		//var dbCreated = window.localStorage.getItem("dbCreated");
-		console.log("onDeviceReady");
+		var dbCreated = window.localStorage.getItem("dbCreated");
+		$("#output").append('<div>onDeviceReady</div>');
 
 		//TEMP: 
 		var dbCreated = "1";
@@ -55,7 +54,7 @@ var app = {
 		}
 	}
 	,onDbReady: function(evt) {
-		console.log("onDbReady");
+		$("#output").append('<div>onDbReady</div>');
 		//ko.applyBindings(new CircuitFactoryViewModel(dal));
 		ko.applyBindings(new CircuitFactoryViewModel());
 
