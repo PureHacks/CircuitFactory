@@ -33,13 +33,11 @@ var app = {
 	}
 	,onDeviceReady: function() {
 		var dbCreated = window.localStorage.getItem("dbCreated");
-		$("#output").append('<div>onDeviceReady</div>');
 
 		//TEMP: 
 		var dbCreated = "forceDelete";
 
 		if(dbCreated !== "1"){
-			//temp
 			dal.setupDb(function(){
 				window.localStorage.setItem("dbCreated", "1"); 
 				$(document).trigger('dbready');
@@ -49,10 +47,7 @@ var app = {
 		}
 	}
 	,onDbReady: function(evt) {
-		$("#output").append('<div>onDbReady</div>');
 		ko.applyBindings(new CircuitFactoryViewModel(dal));
-		//ko.applyBindings(new CircuitFactoryViewModel());
-
 		$("#loading-overlay").fadeOut(1000);
 	}
 	,resetApp: function(){

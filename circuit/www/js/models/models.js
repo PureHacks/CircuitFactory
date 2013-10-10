@@ -29,14 +29,12 @@ var Circuit = function(data) {
 
 	//set to default values
 	self.duration = ko.observable(data.duration||exercisesPerSet);
-	self.timeExercise = ko.observable(data.timeExercise||4);
-	self.timeRest = ko.observable(data.timeRest||2);
+	self.timeWorkoutPerExercise = ko.observable(data.timeWorkoutPerExercise||4);
+	self.timeRestPerExercise = ko.observable(data.timeRestPerExercise||2);
 
 
 	self.intensity = ko.observable(data.intensity||2);
 	self.excercises = ko.observableArray(data.excercises||[]); //to grenerate random exercises
-
-
 
 	self.isInRestMode = ko.observable(false);
 	self.exercisesCompleted = ko.observable(0);
@@ -49,7 +47,7 @@ var Circuit = function(data) {
 		var currentIntervalDuration = 0;
 		restTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
-			if(currentIntervalDuration < self.timeRest()){
+			if(currentIntervalDuration < self.timeRestPerExercise()){
 				currentIntervalDuration++;
 			}else{
 				clearInterval(restTimer);
@@ -67,7 +65,7 @@ var Circuit = function(data) {
 
 		exerciseTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
-			if(currentIntervalDuration < self.timeExercise()){
+			if(currentIntervalDuration < self.timeWorkoutPerExercise()){
 				//console.log("exercise timer", currentIntervalDuration);
 				currentIntervalDuration++;
 			}else{
@@ -93,12 +91,13 @@ var Circuit = function(data) {
 					self.excercises()[self.exercisesCompleted()].isActive(false);
 					self.exercisesCompleted(self.exercisesCompleted()+1);
 					self.excercises()[self.exercisesCompleted()].isActive(true);
-
-					//console.log("NEXT EXERCISE", self.exercisesCompleted(), self.currentTimeSec(), self.duration() * 10);
 					
 					self.nextExercise();
 				}else{
-					$(self).trigger("circuitDone").off("circuitDone");
+					var saveName  = self.duration() + "min Circuit " + new Date().getFullYear() + "/" + new Date().getMonth() + "/" + new Date().getDate();
+					dal.saveNewCircuit(saveName, self.duration(), function(arr, result){
+						$(self).trigger("circuitDone", [result.insertId]).off("circuitDone");
+					});					
 				}
 			});
 		};
@@ -116,16 +115,17 @@ var Circuit = function(data) {
 	self.cancel = function(){
 		clearInterval(restTimer);
 		clearInterval(exerciseTimer);
+		self.currentTimeSec(0);
+		self.excercises()[self.exercisesCompleted()].isActive(false);
+		self.exercisesCompleted(0);
 		$(self).off("circuitDone");
 	};
 
 	self.start = function(){
-
 		var repeatBodypart = self.duration()/exercisesPerSet;
 
 		if(self.excercises().length == 0 || self.excercises().length != (repeatBodypart * exercisesPerSet)){
 			dal.getRandomCircute(repeatBodypart, function(newExcercises){
-			//$.getJSON("js/dal/data.json", function(newExcercises) {	
 
 				self.excercises($.map(newExcercises, function(excercise) {
 					return new Excercise(excercise);
