@@ -5,8 +5,7 @@ var CircuitFactoryViewModel = function(dal) {
 	self.activeScreen = ko.observable("circuit-home");
 
 	self.currentCircuit = ko.observable();
-	self.savedCircuits = ko.observableArray();
-
+	self.savedCircuits = ko.observableArray([]);
 
 
 	self.addNewCircutes = function(id){
@@ -32,11 +31,16 @@ var CircuitFactoryViewModel = function(dal) {
 		self.activeScreen(id);
 	};
 
-	if(self.savedCircuits().length == 0){
-		self.addNewCircutes();
-		self.activeScreen("circuit-setup");
-	}
 
+	dal.getPastCircuits(50, function(result){
+		self.savedCircuits($.map(result, function(savedCircuit){
+			return new Circuit(savedCircuit);
+		}));
+		if(self.savedCircuits().length == 0){
+			self.activeScreen("circuit-setup");
+		}
+	});
 
+	self.addNewCircutes();
 
 };

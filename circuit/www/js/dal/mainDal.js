@@ -65,7 +65,7 @@
 	dal.setupDb = function(onSuccess){
 		$.getJSON("js/dal/data.json", function(data) {	
 			var onTransactionSuccess = function(){
-				dal.saveNewCircuit("fourp", 5, data, function(){console.log("xxxa", arguments);});
+				dal.saveNewCircuit("Demo Circuit", 5, data.slice(data.length - 6), function(){});
 				onSuccess();
 			};
 
@@ -83,7 +83,6 @@
 				tx.executeSql("CREATE TABLE IF NOT EXISTS CIRCUIT (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL DEFAULT '', dateCreated TIMESTAMP DEFAULT (datetime('now','localtime')), dateLastFinished TIMESTAMP, duration INTEGER NOT NULL DEFAULT 0, intensity INTEGER NOT NULL DEFAULT 0, repetedExecutions INTEGER NOT NULL DEFAULT 1)");
 
 				queryBase = "INSERT INTO CIRCUIT (name, duration, intensity) VALUES (?, ?, ?)";
-				tx.executeSql(queryBase, ["Demo Circuit", 6, 1]);
 
 				tx.executeSql("DROP TABLE IF EXISTS CIRCUITEXERCISES");
 				tx.executeSql("CREATE TABLE IF NOT EXISTS CIRCUITEXERCISES (id INTEGER PRIMARY KEY AUTOINCREMENT, circuitId INTEGER, exerciseId INTEGER)");

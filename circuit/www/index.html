@@ -132,9 +132,9 @@
 				<nav class="top-bar">
 					<button data-bind="click: changeScreen.bind($data, 'circuit-home')">Back</button>
 				</nav>
-
 				<div class="content">
 					<h2>Saved Circuits</h2>
+					<div data-bind="template: { name: 'circuit-template', foreach: savedCircuits }"></div>
 				</div>
 			</div>
 		</script>
@@ -147,6 +147,19 @@
 				<h3 data-bind="text: exercise"></h3>
 
 				<div class="arcordeon" data-bind="text: bodyPart"></div>
+			</div>
+		</script>
+
+
+		<script type="text/html" id="circuit-template">
+			<div class="excercise">
+				<h3 data-bind="text: name"></h3>
+				<ul>
+					<li data-bind="text: 'date created:' + dateCreated"></li>
+					<li data-bind="text: 'date last finished:' + dateLastFinished()"></li>
+					<li data-bind="text: 'duration: ' + duration()"></li>
+					<li data-bind="text: name"></li>
+				</ul>
 			</div>
 		</script>
 
