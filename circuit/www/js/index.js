@@ -27,36 +27,31 @@ var app = {
 	// Bind any events that are required on startup. Common events are:
 	// 'load', 'deviceready', 'offline', and 'online'.
 	,bindEvents: function() {
-		//document.addEventListener('deviceready', this.onDeviceReady, false);
-		//$(function(){
-			$("#output").append('<div>bindEvents</div>');
-			$(document)
-				.on('deviceready', app.onDeviceReady)
-				.on('dbready', app.onDbReady);
-		//});
+		$(document)
+			.on('deviceready', app.onDeviceReady)
+			.on('dbready', app.onDbReady);
 	}
 	,onDeviceReady: function() {
 		var dbCreated = window.localStorage.getItem("dbCreated");
 		$("#output").append('<div>onDeviceReady</div>');
 
 		//TEMP: 
-		var dbCreated = "1";
+		var dbCreated = "forceDelete";
 
 		if(dbCreated !== "1"){
 			//temp
-			/*dal.setupDb(function(){
+			dal.setupDb(function(){
 				window.localStorage.setItem("dbCreated", "1"); 
 				$(document).trigger('dbready');
-			});*/
-			$(document).trigger('dbready');
+			});
 		} else {
 			$(document).trigger('dbready');
 		}
 	}
 	,onDbReady: function(evt) {
 		$("#output").append('<div>onDbReady</div>');
-		//ko.applyBindings(new CircuitFactoryViewModel(dal));
-		ko.applyBindings(new CircuitFactoryViewModel());
+		ko.applyBindings(new CircuitFactoryViewModel(dal));
+		//ko.applyBindings(new CircuitFactoryViewModel());
 
 		$("#loading-overlay").fadeOut(1000);
 	}
