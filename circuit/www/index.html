@@ -93,14 +93,10 @@
 				</nav>
 				
 				<div class="content" data-bind="with: currentCircuit()">
-					<h2 class="interval">Do your Circuit</h2>
-					<br/><br/>
-					<div id="timer" data-bind="text: currentTimeSec"></div>
-					<div>Done: <i data-bind="text: exercisesCompleted"></i></div>
-
-					<!-- ko if : currentExcercise -->
-						<b data-bind="text : currentExcercise().exercise"></b>
-					<!-- /ko -->
+					<div class="global-display">
+						<div class="exercises-completed"><i data-bind="text: exercisesCompleted()+1"></i>/<i data-bind="text: excercises().length"></i></div>
+						<div class="timer">Total: <b data-bind="timeText: currentTimeSec"></b></div>
+					</div>
 					
 					<br/><br/>
 
@@ -145,10 +141,12 @@
 
 
 		<script type="text/html" id="excercise-template">
-			<div class="excercise" data-bind="css : {isActive : isActive, isInRestMode : $parent.isInRestMode}">
+			<div class="excercise" data-bind="css : {isActive : isActive, isInRestMode : isActive() && $parent.isInRestMode()}">
 				<h3 data-bind="text: exercise"></h3>
 
-				<div class="arcordeon" data-bind="text: bodyPart"></div>
+				<div class="active-detail" data-bind="slideVisible : isActive">
+					<div data-bind="text: bodyPart"></div>
+				</div>
 			</div>
 		</script>
 

@@ -17,14 +17,14 @@ ko.bindingHandlers.knobify = {
 		knobSize = knobSize * 0.8;
 		// Turn the input into a knob on load
 		var knob = $(element).knob({
-            'min': 0,
-            'max': 60,
-            'step': 6,
-            'width': knobSize,
-            'height': knobSize,
-            'fgColor': '#0bc9f0',
-            'bgColor': '#fff',
-            'font': 'Raleway Dots',
+			'min': 0,
+			'max': 60,
+			'step': 6,
+			'width': knobSize,
+			'height': knobSize,
+			'fgColor': '#0bc9f0',
+			'bgColor': '#fff',
+			'font': 'Raleway Dots',
 			'change' : function (v) {
 				var value = valueAccessor();
 				value(v);
@@ -33,5 +33,26 @@ ko.bindingHandlers.knobify = {
 	},
 	update: function(element, valueAccessor) {
 		$(element).val(ko.utils.unwrapObservable(valueAccessor())).trigger('change');
+	}
+};
+
+
+ko.bindingHandlers.slideVisible = {
+	init: function(element, valueAccessor) {
+		$(element).slideToggle(ko.utils.unwrapObservable(valueAccessor()));
+	},
+	update: function(element, valueAccessor) {
+		ko.utils.unwrapObservable(valueAccessor()) ? $(element).slideDown() : $(element).slideUp();
+	}
+};
+
+ko.bindingHandlers.timeText = {
+	update: function(element, valueAccessor, allBindingsAccessor, context) {
+		
+		var newValueAccessor = function() {
+			var value = (parseFloat(ko.utils.unwrapObservable(valueAccessor()))/ 60.0).toFixed(2).toString();
+			return (value < 10.0 ? "0" : "") + value ;
+		};
+		ko.bindingHandlers.text.update(element, newValueAccessor, allBindingsAccessor, context);
 	}
 };

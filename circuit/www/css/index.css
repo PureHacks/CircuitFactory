@@ -43,6 +43,7 @@ body {
 
 	font-family:'Raleway', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 	font-weight: 200;
+	color: #1d262c;
 	/*font-size:12px;*/
 	height:100%;
 	margin:0px;
@@ -144,9 +145,12 @@ div#get-started button:first-child {
 .excercise.isActive {background:#f00;}
 .excercise.isInRestMode {background:#0f0;}
 
-.arcordeon {overflow: hidden; height: 0;}
-.isActive .arcordeon {height: auto;}
 
+.active-detail {}
+
+.global-display {}
+.timer {background:#1d262c; color: #fff; border-radius: 10px; margin: 0 1em 1em; padding: 0.5em; font-size: 2em; text-align: center;}
+.exercises-completed { margin: 0 2em 1em; text-align: right;}
 
 /* helpers */
 .hide {display: none;}

@@ -26,8 +26,6 @@ var CircuitFactoryViewModel = function() {
 		self.currentCircuit().cancel();
 	};
 
-
-
 	self.changeScreen = function(id){
 		self.activeScreen(id);
 	};

@@ -47,12 +47,17 @@ var Circuit = function(data) {
 		return self.excercises()[self.exercisesCompleted()];
 	});
 
+	self.currentRestDuration = ko.observable(0);
+	self.currentExcerciseDuration = ko.observable(0);
+
 	var startRestMode = function(onRestCompleted){
 		var currentIntervalDuration = 0;
+		self.currentRestDuration(0);
 		restTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeRestPerExercise()){
 				currentIntervalDuration++;
+				self.currentRestDuration(currentIntervalDuration);
 			}else{
 				clearInterval(restTimer);
 				self.isInRestMode(false);
@@ -66,15 +71,17 @@ var Circuit = function(data) {
 
 	var startExcerciseMode = function(onExerciseCompleted){
 		var currentIntervalDuration = 0;
-
 		exerciseTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeWorkoutPerExercise()){
 				//console.log("exercise timer", currentIntervalDuration);
 				currentIntervalDuration++;
+				self.currentExcerciseDuration(currentIntervalDuration);
 			}else{
 				clearInterval(exerciseTimer);
 				self.isInRestMode(true);
+				self.currentRestDuration(0);
+				self.currentExcerciseDuration(0);
 				if(typeof onExerciseCompleted === "function"){
 					onExerciseCompleted();
 				}
