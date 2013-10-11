@@ -48,6 +48,9 @@
 	<gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
 	<gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 	<gap:platform name="android" />
+	<gap:platform name="ios" />
+	<gap:platform name="winphone" />
+	<gap:platform name="blackberry" />
 	<gap:plugin name="com.simplec.plugins.powermanagement" />
 	<access origin="http://127.0.0.1*" />
 </widget>
