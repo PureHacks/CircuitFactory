@@ -1,5 +1,5 @@
 //dal = data access layer
-var CircuitFactoryViewModel = function(dal) {
+var CircuitFactoryViewModel = function() {
 	var self = this;
 
 	self.activeScreen = ko.observable("circuit-home");
@@ -16,6 +16,7 @@ var CircuitFactoryViewModel = function(dal) {
 		self.changeScreen('circuit-interval');
 		self.currentCircuit().start();
 		$(self.currentCircuit()).on("circuitDone", function(){
+			self.savedCircuits.unshift(self.currentCircuit());
 			self.changeScreen('circuit-summary');			
 		});
 	};

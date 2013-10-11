@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ "use strict";
 
 var app = {
 	// Application Constructor
@@ -47,7 +48,7 @@ var app = {
 		}
 	}
 	,onDbReady: function(evt) {
-		ko.applyBindings(new CircuitFactoryViewModel(dal));
+		ko.applyBindings(new CircuitFactoryViewModel());
 		$("#loading-overlay").fadeOut(1000);
 	}
 	,resetApp: function(){

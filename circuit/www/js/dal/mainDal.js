@@ -106,7 +106,7 @@
 	};
 
 	dal.getCircuitExercises = function(circuitId, onSuccess){
-		util.runQuery("SELECT e.* FROM CIRCUITEXERCISES ce LEFT JOIN EXERCISE e on e.id = ce.exerciseId WHERE ce.circuitId = ?", [2], onSuccess);
+		util.runQuery("SELECT e.* FROM CIRCUITEXERCISES ce LEFT JOIN EXERCISE e on e.id = ce.exerciseId WHERE ce.circuitId = ?", [circuitId], onSuccess);
 	};
 
 	dal.getExcercisesByBodypart = function(bodyPart, onSuccess){
@@ -137,9 +137,11 @@
 	dal.saveNewCircuit = function(name, duration, exercises, onSuccess){
 		var intensityTemp = 0; //to implement laters
 
+		console.log(name, duration, exercises);
 		function queryDB(tx) {
 			tx.executeSql("INSERT INTO CIRCUIT (name, dateLastFinished, duration, intensity) VALUES (?, datetime('now','localtime'), ?, ?)", [name, duration, intensityTemp], function(tx, results){
 					var circuitId = results.insertId;
+					console.log(circuitId, exercises);
 					$.each(exercises, function(i,exercise){
 						tx.executeSql("INSERT INTO CIRCUITEXERCISES (circuitId, exerciseId) VALUES (?, ?)", [circuitId, exercise.id||i], function(){}, genereicDbError);
 					});

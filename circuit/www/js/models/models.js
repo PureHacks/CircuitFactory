@@ -13,6 +13,10 @@ var Excercise = function(data) {
 
 var Circuit = function(data) {
 	data = data|| {};
+
+	console.log(data);
+
+
 	var exercisesPerSet = 6;
 
 	var self = this;
@@ -21,10 +25,10 @@ var Circuit = function(data) {
 	var exerciseTimer;
 	self.currentTimeSec = ko.observable(0);
 
-	self.id = "";
-	self.name = ko.observable();
-	self.dateCreated = "";
-	self.dateLastFinished = ko.observable();
+	self.id = self.id||"";
+	self.name = ko.observable(data.name||"");
+	self.dateCreated = data.dateCreated||"";
+	self.dateLastFinished = ko.observable(data.dateLastFinished||"");
 
 
 	//set to default values
@@ -94,9 +98,9 @@ var Circuit = function(data) {
 					
 					self.nextExercise();
 				}else{
-					var saveName  = self.duration() + "min Circuit " + new Date().getFullYear() + "/" + new Date().getMonth() + "/" + new Date().getDate();
-					dal.saveNewCircuit(saveName, self.duration(), function(arr, result){
-						$(self).trigger("circuitDone", [result.insertId]).off("circuitDone");
+					self.name(self.duration() + "min Circuit " + new Date().getFullYear() + "/" + new Date().getMonth() + "/" + new Date().getDate());
+					dal.saveNewCircuit(self.name(), self.duration(), ko.toJS(self.excercises()), function(circuitId){
+						$(self).trigger("circuitDone", [circuitId]).off("circuitDone");
 					});					
 				}
 			});

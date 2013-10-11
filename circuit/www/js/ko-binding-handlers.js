@@ -9,13 +9,19 @@ ko.bindingHandlers.transitionScreen = {
 
 ko.bindingHandlers.knobify = {
 	init: function(element, valueAccessor) {
+
+		var knobSize = $(document).width();
+		if($(document).height() < knobSize){
+			knobSize = $(document).height();
+		}
+		knobSize = knobSize * 0.8;
 		// Turn the input into a knob on load
 		var knob = $(element).knob({
             'min': 0,
             'max': 60,
             'step': 6,
-            'width': 300,
-            'height': 300,
+            'width': knobSize,
+            'height': knobSize,
             'fgColor': '#0bc9f0',
             'bgColor': '#fff',
             'font': 'Raleway Dots',

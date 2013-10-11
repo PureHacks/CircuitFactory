@@ -77,6 +77,8 @@
 					<div id="timeselector">
 						<input type="text" class="dial" data-bind="knobify : currentCircuit().duration">
 					</div>
+
+					<button data-bind="click: startCircuit">GO!</button>
 				</div>
 			</div>
 		</script>
@@ -178,7 +180,9 @@
 		<script src="js/index.js"></script>
 		
 		<script>
-			app.initialize();
+			$(function(){
+				app.initialize();
+			});
 		</script>
 	</body>
 </html>
