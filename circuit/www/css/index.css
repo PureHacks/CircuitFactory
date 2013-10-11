@@ -148,9 +148,13 @@ div#get-started button:first-child {
 .excercise.isActive {background:rgba(29,36,44,0.25); border-radius: 10px;}
 .excercise.isInRestMode {background:rgba(16,209,16,0.5);}
 
+.body-part {margin: 0 0 1em;}
+.pause-countdown, .exercise-countdown {font-size: 1.5em;}
 
 .active-detail {}
 
+/* Archive Page */
+.circuit {margin: 1em 2rem 1em;}
 
 
 /* helpers */

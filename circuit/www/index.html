@@ -114,8 +114,9 @@
 				</nav>
 
 				<div class="content">
-					<h2 class="summary">Circuit Overview</h2>
-					<p>Well done!</p>
+					<h2 class="summary">Well Done</h2>
+					
+					<button data-bind="click: changeScreen.bind($data, 'circuit-archive')">View Circuit Archive</button>
 				</div>
 			</div>
 		</script>
@@ -143,20 +144,21 @@
 				<h3 data-bind="text: exercise"></h3>
 
 				<div class="active-detail" data-bind="slideVisible : isActive">
-					<div data-bind="slideVisible: $parent.isInRestMode">
+					<div class="body-part" data-bind="text: bodyPart"></div>
+					<div  class="pause-countdown" data-bind="slideVisible: $parent.isInRestMode">
 						Pause for <i data-bind="secondsText : $parent.currentRestCountdown"></i> sec
 					</div>
-					<div data-bind="slideVisible: !$parent.isInRestMode()">
+					<div class="exercise-countdown" data-bind="slideVisible: !$parent.isInRestMode()">
 						<i data-bind="secondsText : $parent.currentExcerciseCountdown"></i> sec
 					</div>
-					<div data-bind="text: bodyPart"></div>
+					
 				</div>
 			</div>
 		</script>
 
 
 		<script type="text/html" id="circuit-template">
-			<div class="excercise">
+			<div class="circuit">
 				<h3 data-bind="text: name"></h3>
 				<ul>
 					<li data-bind="text: 'date created:' + dateCreated"></li>
