@@ -139,18 +139,19 @@ div#get-started button:first-child {
 
 
 /* Time Page */
+.global-display {margin: 0 0 2em; }
+.timer {background:#1d262c; color: #fff; border-radius: 10px; margin: 0 2rem 0; padding: 1em; font-size: 1em; text-align: center;}
+.exercises-completed { margin: 0 2em 1em; text-align: right;}
 
-.excercise {clear: both; }
-.excercise {background:#ccc;}
-.excercise.isActive {background:#f00;}
-.excercise.isInRestMode {background:#0f0;}
+.excercises-holder {background:rgba(29,36,44,0.25); border-radius: 10px; margin: 0 2rem 0; padding:2em 0.5em;}
+.excercise {clear: both; padding: 0.5em 1em; text-align: center;;}
+.excercise.isActive {background:rgba(29,36,44,0.25); border-radius: 10px;}
+.excercise.isInRestMode {background:rgba(16,209,16,0.5);}
 
 
 .active-detail {}
 
-.global-display {}
-.timer {background:#1d262c; color: #fff; border-radius: 10px; margin: 0 1em 1em; padding: 0.5em; font-size: 2em; text-align: center;}
-.exercises-completed { margin: 0 2em 1em; text-align: right;}
+
 
 /* helpers */
 .hide {display: none;}

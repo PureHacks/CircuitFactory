@@ -137,7 +137,6 @@
 	dal.saveNewCircuit = function(name, duration, exercises, onSuccess){
 		var intensityTemp = 0; //to implement laters
 
-		console.log(name, duration, exercises);
 		function queryDB(tx) {
 			tx.executeSql("INSERT INTO CIRCUIT (name, dateLastFinished, duration, intensity) VALUES (?, datetime('now','localtime'), ?, ?)", [name, duration, intensityTemp], function(tx, results){
 					var circuitId = results.insertId;

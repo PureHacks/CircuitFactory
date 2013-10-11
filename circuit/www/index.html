@@ -98,9 +98,7 @@
 						<div class="timer">Total: <b data-bind="timeText: currentTimeSec"></b></div>
 					</div>
 					
-					<br/><br/>
-
-					<div data-bind="template: { name: 'excercise-template', foreach: excercises }"></div>
+					<div class="excercises-holder" data-bind="template: { name: 'excercise-template', foreach: excercises }"></div>
 
 				</div>
 			</div>
@@ -145,6 +143,12 @@
 				<h3 data-bind="text: exercise"></h3>
 
 				<div class="active-detail" data-bind="slideVisible : isActive">
+					<div data-bind="slideVisible: $parent.isInRestMode">
+						Pause for <i data-bind="secondsText : $parent.currentRestCountdown"></i> sec
+					</div>
+					<div data-bind="slideVisible: !$parent.isInRestMode()">
+						<i data-bind="secondsText : $parent.currentExcerciseCountdown"></i> sec
+					</div>
 					<div data-bind="text: bodyPart"></div>
 				</div>
 			</div>

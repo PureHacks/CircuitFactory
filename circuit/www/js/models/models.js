@@ -13,14 +13,9 @@ var Excercise = function(data) {
 
 var Circuit = function(data) {
 	data = data|| {};
-
-	console.log(data);
-
-
 	var exercisesPerSet = 6;
-
+	
 	var self = this;
-
 	var restTimer;
 	var exerciseTimer;
 	self.currentTimeSec = ko.observable(0);
@@ -33,8 +28,8 @@ var Circuit = function(data) {
 
 	//set to default values
 	self.duration = ko.observable(data.duration||exercisesPerSet);
-	self.timeWorkoutPerExercise = ko.observable(data.timeWorkoutPerExercise||4);
-	self.timeRestPerExercise = ko.observable(data.timeRestPerExercise||2);
+	self.timeWorkoutPerExercise = ko.observable(data.timeWorkoutPerExercise||40);
+	self.timeRestPerExercise = ko.observable(data.timeRestPerExercise||20);
 
 
 	self.intensity = ko.observable(data.intensity||2);
@@ -47,17 +42,17 @@ var Circuit = function(data) {
 		return self.excercises()[self.exercisesCompleted()];
 	});
 
-	self.currentRestDuration = ko.observable(0);
-	self.currentExcerciseDuration = ko.observable(0);
+	self.currentRestCountdown = ko.observable(self.timeRestPerExercise());
+	self.currentExcerciseCountdown = ko.observable(0);
 
 	var startRestMode = function(onRestCompleted){
-		var currentIntervalDuration = 0;
-		self.currentRestDuration(0);
+		var currentIntervalDuration = 1;
+		self.currentRestCountdown(self.timeRestPerExercise()-1);
 		restTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeRestPerExercise()){
 				currentIntervalDuration++;
-				self.currentRestDuration(currentIntervalDuration);
+				self.currentRestCountdown(self.timeRestPerExercise() - currentIntervalDuration);
 			}else{
 				clearInterval(restTimer);
 				self.isInRestMode(false);
@@ -70,18 +65,18 @@ var Circuit = function(data) {
 
 
 	var startExcerciseMode = function(onExerciseCompleted){
-		var currentIntervalDuration = 0;
+		var currentIntervalDuration = 1;
+		self.currentRestCountdown(self.timeWorkoutPerExercise()-1);
 		exerciseTimer = setInterval(function(){
 			self.currentTimeSec(self.currentTimeSec()+1);
 			if(currentIntervalDuration < self.timeWorkoutPerExercise()){
-				//console.log("exercise timer", currentIntervalDuration);
 				currentIntervalDuration++;
-				self.currentExcerciseDuration(currentIntervalDuration);
+				self.currentExcerciseCountdown(self.timeWorkoutPerExercise() - currentIntervalDuration);
 			}else{
-				clearInterval(exerciseTimer);
+				clearInterval(exerciseTimer);				
+				self.currentRestCountdown(self.timeRestPerExercise());
+				self.currentExcerciseCountdown(0);
 				self.isInRestMode(true);
-				self.currentRestDuration(0);
-				self.currentExcerciseDuration(0);
 				if(typeof onExerciseCompleted === "function"){
 					onExerciseCompleted();
 				}

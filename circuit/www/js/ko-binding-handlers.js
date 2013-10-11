@@ -50,8 +50,22 @@ ko.bindingHandlers.timeText = {
 	update: function(element, valueAccessor, allBindingsAccessor, context) {
 		
 		var newValueAccessor = function() {
-			var value = (parseFloat(ko.utils.unwrapObservable(valueAccessor()))/ 60.0).toFixed(2).toString();
-			return (value < 10.0 ? "0" : "") + value ;
+			var value = parseFloat(ko.utils.unwrapObservable(valueAccessor()));
+
+			var minutes = Math.floor(value / 60);
+			var seconds = value - minutes * 60;
+			return minutes + "." + (seconds < 10 ? "0" : "") + seconds;
+		};
+		ko.bindingHandlers.text.update(element, newValueAccessor, allBindingsAccessor, context);
+	}
+};
+
+ko.bindingHandlers.secondsText = {
+	update: function(element, valueAccessor, allBindingsAccessor, context) {
+		
+		var newValueAccessor = function() {
+			var value = parseInt(ko.utils.unwrapObservable(valueAccessor()));
+			return (value < 10 ? "0" : "") + value ;
 		};
 		ko.bindingHandlers.text.update(element, newValueAccessor, allBindingsAccessor, context);
 	}
